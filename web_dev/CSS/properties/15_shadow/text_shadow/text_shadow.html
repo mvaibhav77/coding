@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #text {
+        font-size: 70px;
+
+        /* we can also add shadown to texts using the text-shadow:  */
+
+        /* text-shadow: horizontal vertical blur color ; */
+
+        /* if no color is mentioned in the text shadow it is by default black  */
+
+        text-shadow: 5px 10px;
+
+        /* to give a real feel of shadown give minimum 5 px blur  */
+
+        /* there is no parameter for spread as of which was there in box shadow  */
+
+        text-shadow: 5px 10px 5px red;
+
+        /* we have another syntax as well  where the color is written first */
+
+        text-shadow: red 5px 10px 5px;
+
+        /* if we give -ve vertical shadow then the shadow appears at the top  */
+
+        /* -value means that the shadow appears on teh opposite side or the left and top sides for the X and Y axis  */
+
+        text-shadow: 5px -10px 5px red;
+
+        /* multiple shadows  */
+
+         text-shadow: 5px 5px 1px #000, -5px -5px 5px blue; 
+      }
+    </style>
+  </head>
+  <body>
+    <div id="text">
+      <p>Hello World</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- for column heading we can create a inline css with thead only but for row headings we cant so inorder to achiove both we can jsut use <style></style> in the head section to color them  -->
+
+    <style>
+      th {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="2">
+      <!-- here is we declare all the headings ina  single row then we create the column headings  -->
+      <caption>
+        <b>column heading</b>
+      </caption>
+      <thead style="color: red">
+        <tr>
+          <th>sno</th>
+          <th>name</th>
+          <th>marks</th>
+        </tr>
+      </thead>
+      <tbody style="color: blueviolet;">
+        <tr>
+          <td>1</td>
+          <td>onkar</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>ravi</td>
+          <td>78</td>
+        </tr>
+
+        <!-- footer of the table  -->
+        
+        <tfoot style="color: red">
+          <tr>
+            <th>sno</th>
+            <th>name</th>
+            <th>marks</th>
+          </tr>
+        </tfoot>
+      </tbody>
+    </table>
+    <br />
+    <hr />
+    <br />
+
+    <table border="2">
+      <!-- here is we declare one  heading in every row then we create the row headings  -->
+
+      <caption>
+        <b>row heading</b>
+      </caption>
+      <tr>
+        <th>row1</th>
+        <td>rishi</td>
+        <td>40</td>
+      </tr>
+
+      <tr>
+        <th>row2</th>
+        <td>onkar</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <th>row3</th>
+        <td>ravi</td>
+        <td>78</td>
+      </tr>
+    </table>
+  </body>
+</html>

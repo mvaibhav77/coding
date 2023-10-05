@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--  when page is loaded tb do cheezein trigger hoti hai :  -->
+
+    <!-- 1. DOM ContentLoaded naam ka event trigger hota hai   -->
+
+    <!-- 2. load trigger -->
+
+    <!-- Dom Content loaded :  Means HTML is Loaded and DOM Tree is created . lekin extrernal reosurces like js , css , images are not downloaded . -->
+
+    <!-- as soon as DOM Tree is created means DOM Content Loaded trigger ho chuka hai .  -->
+
+    <!-- load refers to when all css js html and images are laoded completely on web page  -->
+
+    <img src="./teahub.io-bilder-wallpaper-1669233.jpg" alt="image" id="img1">
+
+    <script>
+
+        // how to apply them 
+
+        // use window.addEventListener
+
+        // dom content load 
+
+        // window. is sued when we ki pure window mei kahi pe bhi agar yeh event ho toh uska pata humein cahlna chaiyea 
+
+        window.addEventListener('DOMContentLoaded',function(){
+            console.log("Dom Tree Created !!")
+        });
+
+        //fully loaded 
+
+        window.addEventListener('load',function(){
+            console.log("fully loaded !!")
+        });
+
+        // the message pop up at different times showing partial and full loading of the page
+
+
+        // abhi toh yeh load tb trigger hora jb all js css images etc are fully loaded 
+
+        // if we want  ki yeh bss ek event say sirf image fully load ho tbhi trigger ho toh uske liyea : 
+
+        let img =document.getElementById("img1");
+
+        img.addEventListener("load",function(){
+            console.log("fully loaded image !!")
+        });
+
+        // now we will see the order of msg is also in teh order of triggering of events means image pehle load hojaata toh uska message fully loaded ke pehle aata hai 
+
+    </script>
+
+</body>
+</html>

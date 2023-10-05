@@ -1,0 +1,35 @@
+body 
+{
+  border: solid 2px red;
+}
+
+#bg
+{
+border: 3px solid aqua ;
+
+/* padding refers to the space between the border and the content this is called padding  */
+
+/* we can paply padding this way  */
+
+padding: 20px;
+
+/* we can also provide padding only at top/right/bottom/left also using : */
+
+/* we can also use percentage the percentage will be set according to the parent tag  */
+
+padding-top: 20px;
+padding-right: 40px;
+padding-bottom: 20%;
+padding-left: 30px;
+
+
+/* we can do this way too  padding : top/bottom left/right*/
+
+padding: 40px 50px;
+
+/* we can do it in one line too instead of using left right top bottom tags like :  */
+
+padding: 2px 10px 20px 40px ;
+
+/* padding cant have negetive value margin can ahve negetive value  */
+}

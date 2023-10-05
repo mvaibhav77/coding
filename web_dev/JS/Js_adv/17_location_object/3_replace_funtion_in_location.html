@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click</button>
+
+    <script>
+
+        let btn = document.getElementById('btn');
+
+        btn.addEventListener('click',fun());
+
+        // the repalce works the smae way as the assign but : 
+
+        // it does not enter in the history of the browser about teh search 
+
+        // whereas the assign() method did enter about the search in the browser history 
+
+        function fun(){
+        location.replace("https://www.google.com/");
+        }
+
+        // you wil see ki back ak button anhi ahi seedha window mei google khulega kyuki history mei entry hee nahi ahi iss search ka 
+    </script>
+</body>
+</html>

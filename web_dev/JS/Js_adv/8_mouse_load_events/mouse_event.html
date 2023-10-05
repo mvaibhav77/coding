@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+      #box5 {
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine !important;
+        margin: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline event addition  -->
+
+    <!--  if we want ki left click se event trigger ho toh uske liyea 'onclick'  -->
+
+    <div id="box5" onclick="fun()"><b>On Left Click</b></div>
+
+    <!-- if we want ki right click krke event trigger ho uske liyea we use 'contextmenu' -->
+
+    <div id="box5" oncontextmenu="fun2()"><b>On Right Click</b></div>
+
+    <!-- if we want ki double click krne pe event trigger ho uske liyea : 'onblclick'  -->
+
+    <div id="box5" ondblclick="fun3()"><b>On Double Click</b></div>
+
+    <!-- these were events were when we release the mouse button tbhi activate honge yeh  -->
+
+    <!-- if we want ki when we press the mouse tbhi event bss activate ho toh we use 'onmousedown' -->
+
+    <div id="box5" onmousedown="fun4()"><b>On Mouse Down</b></div>
+
+    <!-- when we want ki bss jb hum button chore mouse ka tbhi trigger ho toh we use 'onmouseup' command  -->
+
+    <div id="box5" onmouseup="fun5()"><b>On Mouse Up</b></div>
+
+    <!-- if we want ki mouse uske upr jaaye tb event trigger ho toh 'onmouseover' -->
+
+    <div id="box5" onmouseover="fun6()"><b>On Mouse Over</b></div>
+
+    <!--  if we want ki jb mouse enter and exit ho seoparately tb events trigger ho we use :  -->
+
+    <div id="box5" onmouseenter="fun7()" onmouseleave="fun8()"><b>On Mouse Enter & Exit</b></div>
+
+
+    <!-- if we want ki jb bhi element ke upr move karein tb event trigger hot oh we use 'onmousemove' -->
+
+    <div id="box5" onmousemove="fun9()" onmouseleave="fun8()"><b>On Mouse Move </b></div>
+
+
+    <!-- when mopuse moves out of the element adn we want to know ki element ke bahar chale gaya hai we use 'onmouseout' -->
+
+    <div id="box5" onmouseout="fun10()"><b>On Mouse Out </b></div>
+
+    <!-- similarly there are various maouse events ; u can just type onmouse and see various events that we can create  -->
+
+    <script>
+      function fun() {
+        console.log("Left click event");
+      }
+
+      function fun2() {
+        console.log("Right click event");
+      }
+
+      function fun3() {
+        console.log("Double click event");
+      }
+
+      function fun4() {
+        console.log("mouse down event");
+      }
+
+      function fun5() {
+        console.log("mouse up event");
+      }
+
+      function fun6() {
+        console.log("mouse over event");
+      }
+
+      function fun7() {
+        console.log("mouse enter event");
+      }
+
+      function fun8() {
+        console.log("mouse exit event");
+      }
+
+      function fun9() {
+        console.log("mouse move event");
+      }
+
+      function fun10() {
+        console.log("mouse Out event");
+      }
+
+    </script>
+  </body>
+</html>

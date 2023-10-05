@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" style="color:red">Send</button>
+    <button id="btn2" style="color:orange">Send</button>
+
+    <script>
+
+        let btn = document.getElementById("btn");
+        let btn2 = document.getElementById("btn2");
+
+        // as we know ki .sttyle.cssText overrules the existing properties : 
+
+        // if we dont wnat this to happen then we use the += as assignment operator 
+
+        btn.style.cssText += "background-color: orange; border: 2px solid black; border-radius: 3px";
+
+        // now if we inspect and see  we can see taht all teh pre-existing properties as well as the newly added ones are there
+
+        // here we can see ki .setAttribute ke liyea kn hai humpe to concatinate we cant concatinate 
+
+        btn2.setAttribute("style" , "background-color:beige;border:2px solid black")
+    </script>
+</body>
+</html>

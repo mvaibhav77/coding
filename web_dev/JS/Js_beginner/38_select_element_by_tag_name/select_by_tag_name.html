@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>heading 1</h2>
+
+    <div id="divison">
+
+      <p>paragraph 1</p>
+
+      <h2>heading 2</h2>
+
+      <p>paragraph 2</p>
+
+      <h2>heading 3</h2>
+
+      <p>paragraph 3</p>
+    </div>
+
+    <script>
+      let ele = document.getElementsByTagName("h2");
+
+      // view the contents we use :
+
+      console.log(ele);
+
+      // now as using tag too we select multiple elements means innerHTNML wont work directly we need to use for loop iteration
+
+      for (let i = 0; i < ele.length; i++) {
+        ele[i].innerHTML = "heading changed !! ";
+      }
+
+      // now if we want ki div wale hadings sirf change ho toh hum aise karenge : 
+
+      // select and store the block of div which has all h2's to change : 
+
+      let elm = document.getElementById("divison");
+
+      // now store the h2 tags of that block withing another element
+
+      // now as there are many h2 elements means we need to use the iteration loop to cahgne the contents using inner html 
+      
+      let div1 = divison.getElementsByTagName("h2");
+
+      for (let i = 0; i < div1.length; i++) {
+
+        div1[i].innerHTML = "div changed !! ";
+
+      }
+
+    </script>
+  </body>
+</html>

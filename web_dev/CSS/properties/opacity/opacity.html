@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #color-box {
+        background-color: green;
+
+        width: 500px;
+
+        height: 500px;
+
+        /* to give gap between text and iamge  */
+
+        margin-bottom: 20px;
+
+        /* opacity is used when we want to lighten the color of the elements just like we did for colors back then  */
+
+        /* opacity ranges form 0-1 */
+
+        opacity: 0.5;
+
+        /* this lightens the green of the box div with id color-box */
+      }
+
+      #red-box
+      {
+        background-color: red;
+
+        width: 500px;
+
+        height: 500px;
+
+        margin-bottom :20px ;
+
+        /* as we insert the red box inside the opac green we can create designs like this if we want  */
+
+        margin-top: -100px;
+        
+      }
+      /* img{ 
+
+        to lighten the iamge we use it this way   
+
+       opacity: .5; 
+
+       }  */
+
+      /* now say we want the image to be lighten only when we hover above it  */
+
+      /* commented the above part as to see the effect  */
+
+      img:hover {
+        opacity: 0.5;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="color-box">
+      <p></p>
+    </div>
+
+    <div id="red-box">
+      <p></p>
+    </div>
+
+    <img src="./1.jpeg" alt="image" />
+  </body>
+</html>

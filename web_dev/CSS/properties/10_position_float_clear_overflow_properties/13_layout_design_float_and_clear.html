@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+.content
+{
+  background-color: green;
+  width: 70%;
+  height: 200px;
+  float: left;
+} 
+
+.sidebar  
+{
+  background-color: red;
+
+  width: 30%;
+  
+  height: 150px;
+
+  height: 200px;
+
+  /* if we set it to 200px we could see all good and not witness the problem that causes the footer to place in wrong place just below the side bar and not at the very end .. but due to the uneven size of the containers we get to know the importance of clear:both; tag  */
+
+  float: left;
+}
+.footer 
+{
+  background-color: greenyellow;
+
+  /* now see as we have uneven size the footer tag coz of float altoughj div is block element but bcoz of float it thinks that the new line start just after the side bar where as we wanted the footer at teh very bottom so in order to have it in the very bottom irrespective of the uneven size of the content and side bar heights we use clear:both; */
+
+  clear: both;
+
+  /* we can see its role only when the sidebar is set to 150 i.e uneven so as to teh size of the content tag  */
+  
+}
+  </style>
+</head>
+<body>
+  <div class="content">Content</div>
+  <div class="sidebar">Sidebar</div>
+  <div class="footer">Footer</div>
+</body>
+</html>

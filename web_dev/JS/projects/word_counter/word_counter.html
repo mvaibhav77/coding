@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter</title>
+    <style>
+      body {
+        padding: 50px 100px;
+      }
+      h1 {
+        text-align: center;
+        background-color: #0f52ba;
+        padding: 10px;
+        margin: 0px;
+        color: white;
+      }
+      #textbox {
+        width: 99.3%;
+        border-color: black;
+        border: 2px solid;
+        font-size: 15px;
+      }
+      p {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: #0f52ba;
+        color: white;
+        padding: 6px;
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--  LAYOUT :  -->
+
+    <h1>Word And Character Counter</h1>
+
+    <textarea id="textbox" cols="30" rows="10"></textarea>
+
+    <p><span id="words">0</span> words <span id="char">0</span> characters</p>
+
+    <script>
+      // SELECT ELEMENTS : 
+      let textbox = document.getElementById("textbox");
+
+      // now we want ki jb bhi hum input dete hai tb action perform ho : 
+
+      // for this event is 'input'.
+
+      textbox.addEventListener("input", function () {
+
+        // space is also counted in character counting
+
+        // aquire the entered content in a variable using the this.value;
+
+        var text = this.value;
+
+        //    console.log(text);
+
+        // to knwo the length / number of characters 
+
+        let char = text.length;
+
+        // to change the predescribed content in an html doc we use the innerHTML !!
+
+        document.getElementById("char").innerHTML = char;
+
+        // space is not counted during words counting
+
+        // removing extra spaces from the start and the end using trim() funtion .
+
+        text = text.trim();
+
+       // to count words we say each space encountered means a word is completed 
+
+       // splitting each word using the split() funtion for every space
+
+        let words = text.split(" ");
+
+         // still the spaces between the words if incresed increases the number of words counter
+
+         // so we need to filter the words tomavoid this case even further suing the .filter function 
+
+         // here a pseudo function is passed as a argument inside the filter function .
+
+        let cleanList = words.filter(function (elm) {
+
+          // we return only words now in the clean list excluding the in between spaces 
+
+          return elm != "";
+
+        });
+
+        // console.log(cleanList);
+
+        document.getElementById("words").innerHTML = cleanList.length;
+
+        // changed from words -> cleanList to get accurate words
+      });
+    </script>
+  </body>
+</html>

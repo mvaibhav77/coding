@@ -1,0 +1,42 @@
+body {
+  border: 2px solid black;
+}
+
+#bg {
+  background-color: aqua;
+
+  border: 3px solid black;
+
+  /* if we dont set heigth and width toh voh automatically according to conteent set krke display kr deta hai  */
+
+  /* if we want to set then we do  in 'pixels' or 'percentage' */
+
+  height: 500px;
+  width: 70%;
+
+  /* in percentage system it sets according to the parent tag (which is body here for id)  in percentage 
+  
+  /* MAX & MIN */
+
+  /* we can define max & min height and width as well  */
+
+  /* max-width: ;
+  max-height: ;
+  min-width: ;
+ min-height: ; */
+
+ /* min means kum se kum itti hogi hee  */
+
+ /* max means zadaya se zadaya itti hogi hee  */
+
+ min-height: 700px;
+
+ /* wps 500 karein toh nhi hoga  */
+ 
+ height: 500px;
+
+ /* see the bg container will now have atleast min height of 700px */
+ 
+ /* means that ek bar likh diya min / max mtlb usse zadaya ya kum wala hee changes process hoga to display content on teh screen ....  */
+
+}

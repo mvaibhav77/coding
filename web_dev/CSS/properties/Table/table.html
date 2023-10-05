@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* table pe border laagna hai aise  */
+
+      /* TABLE MEI MARGIN NAHI ALGTA BORDER-SPACING USE KRTE HAI  */
+
+      /* lekin to use border margin we need to have border-collapse:separate;  */
+
+      table {
+        border: 1px solid black;
+
+        /* see if we dont use this separate cells honge sb ke apane apane agr collapse karna hai toh we use this  */
+
+        border-collapse: collapse;
+
+        /* to use border margin we have to  separate  */
+
+        border-collapse: separate;
+        
+        /* we can provide border-spacing : all side; or border-spacing: top/bottom left/right ; or  */
+        /* border-spacing : top right bottom left ; */
+
+        border-spacing: 15px;
+
+        border-spacing: 15px 25px;
+
+        border-spacing: 15px 25px 20px 40px;
+
+        /* as u can see we have an empty cell inside the table if we want to hide empty cells we use  */
+
+        empty-cells: hide;
+
+      }
+
+      /* if we want border in caption aise  */
+
+      caption {
+        border: 1px solid black;
+
+        /* if we want the caption to be at the bottom we can do it by  */
+
+        caption-side: bottom;
+      }
+
+      /* remember tr pe border nhi lagta hai  */
+
+      /* this has no effect  */
+
+      tr {
+        border: 1px solid black;
+      }
+
+      /* th   */
+
+      th {
+        border: 1px solid black;
+
+        /* if we want to give height to table heading aise de skte hai  */
+
+        height: 30px;
+
+        /* we can also give width to table cells  */
+
+        width: 60px;
+
+        /* if we want to give padding to data in cells we can give this way  */
+
+        padding: 15px;
+
+        /* we can also align the text inside the cell suign  */
+
+        text-align: right;
+
+
+        /* we can also give vertical-align as we gave height too to the cells  */
+
+        vertical-align: bottom;
+        
+      }
+
+      /* td  */
+
+      td {
+        border: 1px solid black;
+
+        /* if we want to give height to table data aise de skte hai  */
+
+        height: 25px;
+
+        /* we can also give width to table data  */
+
+        /* width dono ka same hee rhega kahi bhi likhdo ek baat hai  */
+
+        width: 60px;
+
+        /* if we want to give padding to data in cells we can give this way  */
+
+        padding: 5px;
+
+        /* if we want to align text inside the cell we can do this way  */
+
+        text-align: right;
+
+        /* we can also give vertical-align as we gave height too to the cells  */
+
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <!-- border yahan nahi lagare css mei akrenge  -->
+
+      <caption>
+        <b>Tabel CSS</b>
+      </caption>
+      <tr>
+        <th>S.NO</th>
+        <th>Name</th>
+        <th>Marks</th>
+      </tr>
+
+      <tr>
+        <td>content 1</td>
+        <td>content 2</td>
+        <td>content 3</td>
+      </tr>
+
+      <tr>
+        <td>content 4</td>
+        <td>content 5</td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>

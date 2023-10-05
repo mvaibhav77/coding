@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* just like we gave shadow to text we use box shadow to give shadow to boxes  */
+
+    div{
+      border: 2px solid black ;
+
+      width :500px;
+
+      background-color: aqua;
+
+      margin: 100px;
+
+      padding: 20px;
+
+      /* box-shadow: X axis , Y axis , Blur(pixels) , Spread Radius (pixels) , color ; command is used to give shadow where we give first the x axis then y axis then the color  */
+
+      /* without blur we will see sharp borders of teh shadow but on applying blur and increasing its number the shadow effect comes into play and the sharpness goes away  */
+
+      /* blur badhane se blur bada hojayega aur color utta hee faint hojayega  */
+
+      /* there is no negetive blur radius  */
+
+      /* spread bss yhi hai ki kitta spread krwana hai humko shadow ko  */
+
+      box-shadow: 10px 20px 10px 5px black ;
+
+      /* isse toh box ke abhar shadown banta hai if wee want ki box ke andr shadow ho then use insect after color box-shadow: x asxis y axis blur spread color insect ; */
+
+      box-shadow: 10px 20px 5px  grey inset;
+
+      /* if we want multiple shadow toh multiple lagao aise  */
+
+      box-shadow: 10px 20px 15px 3px orange, 10px -10px 15px 3px  red;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>This is Text !</p>
+  </div>
+</body>
+</html>

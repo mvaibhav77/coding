@@ -1,0 +1,147 @@
+/* a good practice is to always include all these default things */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: none;
+  margin: 3px 5px;
+  background-color: #ffffff;
+  background-image: linear-gradient(62deg, #ffffff 0%, #fcc3c3 100%);
+}
+
+.nav-container {
+  width: 100vw;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  padding-right: 2rem;
+  min-height: 80px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  overflow-x: none;
+}
+
+#nav-list {
+  /* margin-left: 15px;
+  margin-right: 15px; */
+  padding: 15px;
+  list-style-type: none;
+  font-size: 2.3rem;
+
+  /* agr humein side by side chaiyea toh humein parent of list items ko flex banana hoga  */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#brand-name {
+  color: azure;
+}
+
+#navItems {
+  display: flex;
+  gap: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+.footer {
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  width: 100%;
+  text-align: center;
+  min-height: 40px;
+}
+
+.footer p {
+  color: azure;
+  font-size: 2rem;
+  /* display: flex;
+  align-content: end;
+  justify-content: center; */
+}
+
+.content {
+  width: 50vw;
+  height: auto;
+  margin: auto;
+  padding: 3rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  /* border: 1px solid black; */
+  box-shadow: 1px 1px 30px black;
+}
+
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rightBox {
+  position: relative;
+  overflow: hidden;
+  transition: all .3s linear 0s;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 10px;
+}
+.rightBox img {
+  border-radius: 10px;
+}
+
+.rightBox:hover {
+  transform: scale(1.1);
+  transition: all 0.4s linear 0s;
+}
+
+.leftBox h2 {
+  font-size: 2rem;
+}
+
+.ingredients {
+  font-size: 1.3rem;
+  list-style-type: circle;
+}
+
+.recipe {
+  font-size: 1.3rem;
+}
+
+.rightBox .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(30, 27, 27, 0.519);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.rightBox:hover .overlay {
+  opacity: 1;
+  transition: all 0.3s linear 0s;
+}
+.rightBox .overlay span {
+  color: white;
+  font-size: 1.2rem;
+}

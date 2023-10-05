@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 400px;
+        width: 400px;
+        border: 2px solid black;
+        background-color: aqua;
+      }
+
+      /* 
+      <!-- a responsive design is something which looks good on different display sizes and arranges itself according to the screen size and looks good oversall  -->
+
+      <!-- so now media query is used where we want to load different css for different screen sizes .. this is possible using media queries  -->
+
+      <!-- through media query we can decide how we want out page to render on different screen size devices ..  -->
+
+      <!-- added using @media  --> */
+
+/* this means that the box will be blue in color between 300-500 px and other than this range will be default color aqua  */
+
+      @media( min-width:300px) and (max-width:500px)
+      {
+        .box
+        {
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Hello Jee</div>
+  </body>
+</html>

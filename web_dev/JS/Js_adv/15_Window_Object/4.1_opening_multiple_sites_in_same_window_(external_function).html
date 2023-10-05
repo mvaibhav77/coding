@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn1">Open Google</button>
+    <button id="btn2">Open Yahoo</button>
+
+    <script>
+      let features = "height=400,width=600"; // You can adjust the dimensions
+
+      let targetWindow; // This variable will hold the reference to the opened window
+
+      document.getElementById("btn1").addEventListener("click", openGoogle);
+      document.getElementById("btn2").addEventListener("click", openYahoo);
+
+      function openGoogle() {
+        if (targetWindow && !targetWindow.closed) {
+          targetWindow.location.href = "http://www.google.com/";
+        } else {
+          targetWindow = window.open(
+            "http://www.google.com/",
+            "sameWindow",
+            features
+          );
+        }
+      }
+
+      function openYahoo() {
+        if (targetWindow && !targetWindow.closed) {
+          targetWindow.location.href = "http://www.yahoo.com/";
+        } else {
+          targetWindow = window.open(
+            "http://www.yahoo.com/",
+            "sameWindow",
+            features
+          );
+        }
+      }
+
+      //When the buttons are clicked, the respective functions check if the targetWindow is already open and hasn't been closed. If it's open, the function updates the URL of the existing window. If it's closed, a new window is opened with the specified URL and window name.
+
+      // //The window name is set to "sameWindow" in both cases, which ensures that the URLs will open in the same window.
+
+      //Please note that modern browsers are often designed to prevent websites from changing the URL of already opened windows due to security concerns. This means that while this code may work, it could be blocked by browser security mechanisms or pop-up blockers.
+      
+    </script>
+  </body>
+</html>

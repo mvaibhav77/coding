@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #wrapper {
+        padding: 20px;
+        margin: 20px;
+      }
+
+      a {
+        /* to remove underline  */
+
+        text-decoration: none;
+
+        background-color: aqua;
+
+        padding: 10px 20px;
+
+        color: red;
+
+        display: inline-block;
+
+        /* skew is used to skew an element along x and y  */
+
+        /* transform: skewX(x deg) */
+
+        /* the degree can be negetive or positive  */
+
+        /* this will skew element only in the x direction  */
+
+        transform: skewX(20deg);
+
+        /* transform: skewY(x deg) */
+
+        /* this will skew element only in the y direction  */
+
+        transform: skewY(20deg);
+
+         /* but teh thing is when using the skewX / skewY only the succeding one will be applied and not both  */
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- with 2d transform we can scale , move , rotate , skew  -->
+
+    <!-- but the problem is it does not work with inline elements  -->
+
+    <!-- works only or block / inline-block elements  -->
+
+    <!-- keyword used is transform: ; -->
+
+    <div id="wrapper">
+      <a href="">Click Here</a>
+    </div>
+  </body>
+</html>

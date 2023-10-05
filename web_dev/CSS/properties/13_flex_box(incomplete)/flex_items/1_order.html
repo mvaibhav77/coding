@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- flexbox & grid is a very powerful tool ... used to create different layouts  -->
+
+    <!-- here we will elarn about flex box 
+    
+     flexbox is a 1-D layout method 
+    
+     flex box = flexible box 
+    
+    a container where flex box is applied is called flex box container 
+    
+     the items inside it are called flex box item 
+    
+    the x axis is : main axis 
+    
+     the y axis is : cross axis 
+    
+     left most and right most borders are called : main start and end 
+    
+    top and bottom most borders are called cross start and cross end 
+     -->
+
+    <!-- by default direction of flex box elements is row wise  -->
+
+    <style>
+      .container {
+        height: 1200px;
+
+        background-color: beige;
+
+        border: 4px solid black;
+
+        margin: 2px;
+
+        padding: 2px;
+
+        display: flex;
+
+        /* row wise  */
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+      }
+
+      .box {
+        height: 300px;
+        width: 400px;
+        border: 2px solid brown;
+        margin: 2px;
+        padding: 2px;
+
+        /* flex:1 just assigns all the containers equal spacing on the screen  */
+
+        flex: 1;
+
+        /* why we did order 1 read text below and understand  */
+
+        order: 1;
+      }
+
+      #box1 {
+        background-color: aqua;
+
+        /* order property is used for flex items and is used to position reltively the box we want at the start middle or at the very end uing order numbers  */
+
+        /* we should know that by default all have order : 0 so any number greater than zero will mvoe the box to the very end if any other is not assigned any order number  */
+
+        order: 1;
+
+        /* if order 5  */
+
+        order: 5;
+
+        /* if order 4*/
+
+        order: 4;
+
+        /* but lets say we assign a default order of order ;1 to the class of items i.e. box now the default order is 1 means any number above one will result in the container being placed at the very end  */
+
+        order: 2;
+      }
+
+      #box2 {
+        background-color: blue;
+      }
+
+      #box3 {
+        background-color: orange;
+
+        /* say we want the orange one at the very start  */
+
+        /* as we know if we have not given any default order value means the default value is 0 so any number below zero will move the box at teh very start  */
+
+        /* but as we mentioned an order 1 as the default order means that the number less than 1 starting from 0 to -infinity will serve as placing the container at the very start  */
+
+        /* giving it number form -1 to -infinity places it at the start  */
+
+        order: 0;
+      }
+
+      #box4 {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Div1</div>
+      <div class="box" id="box2">Div2</div>
+      <div class="box" id="box3">Div3</div>
+      <div class="box" id="box4">Div4</div>
+    </div>
+  </body>
+</html>

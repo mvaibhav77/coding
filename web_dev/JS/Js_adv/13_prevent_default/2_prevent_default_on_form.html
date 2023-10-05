@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" id="form">
+      <input type="text" />
+      <input type="submit" />
+
+      <!--  initially we can see as soon as we type something adn press submit the page refresehes and the text field goes empty as it was initially . -->
+
+    </form>
+    <script>
+      //select element
+          let form=document.getElementById("form");
+
+          //for preventing default behaviour of submit we use 'submit' event
+          form.addEventListener("submit",function(event) {
+               event.preventDefault();
+          });
+
+          // after adding prevent default behaviour we see thast after clicking the submit the page does not refresh means the form isnt submitted 
+    </script>
+  </body>
+</html>

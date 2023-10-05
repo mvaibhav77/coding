@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  query is the most powerful selector  -->
+
+     <!-- this is the most widely used one because here we can directly select the id class tag etc ...  -->
+
+    <h2 class="intro">heading 1</h2>
+
+    <div id="div1">
+      <p class="intro">paragraph 1</p>
+
+      <h2 class="intro">heading 2</h2>
+
+      <p>paragraph 2</p>
+
+      <h2>heading 3</h2>
+
+      <p class="intro">paragraph 3</p>
+    </div>
+
+    <!--  now if we want ot select the p tag having that class intro we do it as :  -->
+
+    <script>
+      // to select the p tag that has intro we use this syntax in query selector
+
+      let elm = document.querySelector("p.intro");
+
+      // now as there are many p tags with intro means we need looping to change contents using the inner html
+
+      for (let i = 0; i < elm.length; i++) {
+        elm[i].innerHTML = "HELLO";
+      }
+
+      // this takes no effect WHY?? ??  lets see : 
+
+      console.log(elm);
+
+      // here we see that only one parah with class intro is selected
+
+      elm.innerHTML="hello";
+
+      // as only one is selected iteration nahi lagega plus why ?? only one sleected : 
+
+      // ? this happens because when we use just the .querySelector it just stores the first one which fullfills the condition and none other 
+
+      // if we want ot select all the parahgraphs which satisfy the condition we use .querySelectorAll 
+
+      let ele = document.querySelectorAll("p.intro");
+
+      // now as multiple are selected we use for loop : 
+
+      for (let i = 0; i < ele.length; i++) {
+        ele[i].innerHTML = "HELLO";
+      }
+
+      // now we see that all teh parah which have the classs intro are changed to HELLO ...
+
+
+    </script>
+  </body>
+</html>

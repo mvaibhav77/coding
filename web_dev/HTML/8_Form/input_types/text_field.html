@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <!-- the type specifies the type of input we want to create where as the name sugegests the type of detail it is going to store first name last name email password etc.... -->
+
+      <label for="hii">enter first name </label>
+      <input type="text" name="first name" id="hii" />
+
+      <br />
+      <br />
+
+      <!-- or if we do this  -->
+
+      <!-- by default the type of input tag is text field only  -->
+
+      <label for="hello">enter last name </label>
+      <input name="last name" id="hello" />
+
+      <!-- the value attribute is used to assign a pre defined value to the firld as desired by the programmer  -->
+      <br />
+      <br />
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" value="onkar" size="30" />
+
+      <!-- the size attribute is sued to tell how big we want the box to be  -->
+
+      <!-- disabled is used to highlight the previously entered detail in a  diminished way instead of writing value we write disabled  -->
+
+      <br />
+      <br />
+      <label for="name">Name</label>
+
+      <input type="text" name="name" id="name" value="onkar" disabled />
+
+      <br />
+      <br />
+      <!-- readonly is used when we dont the want value to be altered  -->
+
+      <!-- max length is used to state how many characters can be entered in the field  -->
+      <!-- maxlength="20" means upto 20 characters can be entered  -->
+
+      <label for="name">Name</label>
+
+      <input
+        type="text"
+        name="name"
+        id="name"
+        value="onkar"
+        readonly
+        maxlength="20"
+      />
+
+      <!-- there is also a function called autocomplete  keyword used inside the input type thi is used to hint the user that the form is already submitted once by the user previously kinda msg  -->
+    </form>
+  </body>
+</html>

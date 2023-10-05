@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- flexbox & grid is a very powerful tool ... used to create different layouts  -->
+
+    <!-- here we will elarn about flex box 
+    
+     flexbox is a 1-D layout method 
+    
+     flex box = flexible box 
+    
+    a container where flex box is applied is called flex box container 
+    
+     the items inside it are called flex box item 
+    
+    the x axis is : main axis 
+    
+     the y axis is : cross axis 
+    
+     left most and right most borders are called : main start and end 
+    
+    top and bottom most borders are called cross start and cross end 
+     -->
+
+    <!-- by default direction of flex box elements is row wise  -->
+
+    <style>
+      .container {
+        height: 500px;  
+
+        background-color: beige;
+
+        border: 4px solid black;
+
+        margin: 2px;
+
+        padding: 2px;
+
+        display: flex;
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+        /*  we have justify content which places elements according to main axis  */
+
+        /* if out contents are brow wise then the main axis is X   */
+
+        /* if our content are column wise then our main axis is Y  */
+
+        /* using justify content we can palce elements at start end centre add 
+        space (around even between) to them  */
+
+        /* now we ahve content  row wise so using the justify will align them according to main axis which is X axis */
+
+        justify-content: center;
+
+        /* if we want to palce thenm at the start we use  */
+
+        justify-content: start;
+
+        /* if we want to palce thenm at the end we use  */
+
+        justify-content: end;
+
+
+        /* if we want to add spaces between the boxes we use  */
+
+        /* space between mein start and end ke boxes chipke honge border se rest of the flex items mei equal space gap hoga  */
+
+        justify-content: space-between;
+
+        /* using space around yahan start and end ke dabbe chipke nhi honge border se they will have equal 
+        L/R  space around them  */
+
+        justify-content: space-around;
+
+        /* space evenly mei space  L/R mei same hoga  */
+
+        justify-content: space-evenly;
+
+      }
+
+      .box {
+        height: 300px;
+        width: 400px;
+        border: 2px solid brown;
+        margin: 2px;
+        padding: 2px;
+      }
+      #box1 {
+        background-color: aqua;
+      }
+
+      #box2 {
+        background-color: blue;
+      }
+
+      #box3 {
+        background-color: orange;
+      }
+
+      #box4 {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Div1</div>
+      <div class="box" id="box2">Div2</div>
+      <div class="box" id="box3">Div3</div>
+      <div class="box" id="box4">Div4</div>
+    </div>
+  </body>
+</html>

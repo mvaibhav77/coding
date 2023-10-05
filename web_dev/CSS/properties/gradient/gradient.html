@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    #div1
+    {
+      height: 500px;
+      width: 500px;
+      border: 2px solid black;
+
+      /* to apply gradient we need to use background-image: linear-gradiant( direction/degree , name of colors to mix); tag   */
+
+      background-image: linear-gradient(green , blue);
+
+      background-image: linear-gradient(green , blue,red);
+
+      /* if we want to cahnge direction of gradient we need to right it at the ver FIRST  */
+
+      background-image: linear-gradient(to right, green , blue);
+
+      /* form tope left to bottom right  */
+
+      background-image: linear-gradient(to bottom right, green , blue, red);
+
+      /* we can also mention the degree if we want for a  particular gradient pattern  */
+
+      /* also we can mention the percentage we want of the color to occupy in the gradient after the color name  */
+
+      background-image: linear-gradient(90deg, green 10%, blue 80%);
+
+
+      /* RADIAL gradient  */
+
+
+       /* to apply gradient we need to use background-image: radial-gradiant( direction/degree  , name of colors to mix); tag   */
+
+       background-image: radial-gradient(blue,red); 
+
+      /* shape of radial gradient is by default eclipse  */
+
+      /* if we want to cahnge to circle we use  */
+
+       background-image: radial-gradient(circle,blue,red); 
+
+      /* we can also set kaunsa color kitta spcae occupy karega  */
+
+       background-image: radial-gradient(circle,blue 40%, red 80% ); 
+
+      
+    }
+  </style>
+</head>
+<body>
+
+  <!-- mixing of smooth mixing of two or more colors  -->
+
+  <!-- therer are two types  -->
+  <!-- 1. linear gradient  -->
+  <!-- 2. radial gradient (circular) -->
+
+  <div id="div1"></div>
+
+</body>
+</html>

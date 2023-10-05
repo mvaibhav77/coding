@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn1">Google</button>
+    <button id="btn2">Close</button>
+
+    <script>
+      let btn1 = document.getElementById("btn1");
+
+      let btn2 = document.getElementById("btn2");
+
+      let features = "height=500px;width=500px;";
+
+      // global variable hona chaiyea value to be used to close window 
+
+      let value;
+
+      let url = "https://www.google.com/";
+
+      btn1.addEventListener("click", function () {
+
+        value = window.open(url, "google", features);
+      });
+
+      // if we want to close a window for this we need the id of the opened page
+
+      // toh iske liyea kya karo jahan window open karre usko kisi var mei store karlo
+
+      // but keep in mind to store the variable as a global one 
+
+      //syntax : win.close(variable having the id of the new tab / page )
+
+      btn2.addEventListener("click", function () {
+        win.close(value);
+      });
+    </script>
+  </body>
+</html>

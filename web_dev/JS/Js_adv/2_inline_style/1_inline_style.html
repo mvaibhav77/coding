@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  how to change inline style using js  -->
+
+    <button id="btn">Send</button>
+
+    <button id="btn2">Send</button>
+
+    <button id="btn3">Send</button>
+
+
+    <script>
+      //select elmnt by id
+
+      let btn = document.getElementById("btn");
+
+      // styling using js 
+      
+      // WAY 1 :  .style.cssText = " ";
+
+      btn.style.cssText="background-color:red; color:black; border:2px solid; border-radius: 20px";
+
+      // WAY 2 :  USIGN .setattribute("style" , "name of property : value ;name of second property:value;...") to
+
+      let btn2 = document.getElementById("btn2");   
+
+      btn2.setAttribute("style", "background-color: red ; color:white; border:2px solid black; border-radius: 20px");
+
+
+      // 3. WAY 3 : 
+      
+      //.style.attributename =" value of property ";
+
+      // selecting by id : 
+
+      let btn3 =document.getElementById("btn3");
+
+      //setting ek ke property aise : 
+       
+      btn3.style.color= "white";
+
+      btn3.style.background= "red";
+
+    </script>
+  </body>
+</html>

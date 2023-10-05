@@ -1,0 +1,20 @@
+<!-- box model refers to what so ever maybe the content we put it will be displayed within a rectangular box only -->
+
+  <!-- whenever we use css we alwys should keep box model in our mind  -->
+
+  box model consists of 4 parts 
+  1. content
+
+  2. border
+
+  3. padding :
+
+   the process of creating space around the content is called padding 
+
+   OR
+   
+    increasing / creating space between the content and the border 
+  
+  4. margin :
+  
+  The margin property defines the space around an HTML element. It is possible to use negative values to overlap content.

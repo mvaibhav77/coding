@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <!-- used when we want any field to have only a phone number as the input we also need to define the range of the numbers that have to be entered  -->
+
+      <label for="phone">Enter your phone number:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="1234-56-7890"
+        required
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}"
+      />
+
+      <button>submit</button>
+
+      <!-- the required states thast this field is mandatory   -->
+
+      <!-- if the stated format isnt fulfilled correctly then their will be a msg of type mismatch and number wont be accepted  -->
+    </form>
+  </body>
+</html>

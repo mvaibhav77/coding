@@ -1,0 +1,115 @@
+#bg {
+  /* this si how we put background iamge in the html file using css */
+
+  background-image: url("./1.jpeg");
+
+  /* now note that the iamge repeats itself again and again to cover the area of the content if we dont want that to happen we use background-repeat : no-repeat  */
+
+  background-repeat: no-repeat;
+
+  /* now the image appears only once and does not cove rthe full content  */
+
+  background-repeat: repeat-x;
+
+  /* now the image reapeats only on teh x axis  */
+
+  background-repeat: repeat-y;
+
+  /* this will result in image repeating only on the y axis  */
+
+  background-repeat: repeat;
+
+  /* this means that the image will repeat both on x and y axis  */
+
+  /* for now let us set to no repeat  */
+
+  background-repeat: no-repeat;
+
+  /* how to set the position of the image if we want to using the background-position: ; tag  */
+
+  /* first we need to tell the place where we want it on the x axis like the left/center/right and then the position on the y axis left/center/right  */
+
+  background-position: right top;
+
+  /* this shifts the pic on the right top and not the left top as default  */
+
+  background-position: center center;
+
+  /* we can also set the image using the pixel such as   */
+
+  /* mentioning the pixel of the x axis then of the y axis  */
+
+  background-position: 50px 100px;
+
+  /* same can be done using the percentage also  */
+
+  background-position: 40% 10%;
+
+  /* for now let us keep it to default left top  */
+
+  background-position: left top;
+
+  /* now if we want not to repeat it on the screen as also to cover the whole content here comes the role of the background size where we set the background image size of the image to cover the whole content  */
+
+  /* this size of image  can be inserted into pixels or percentage ont eh X and Y axis respectively  */
+
+  /* it stretches and does not repeat  */
+
+  background-size: 500px 700px;
+
+  /* using percentage if we want the whole content to be covered simply mark size as 100% and 100%  */
+
+  background-size: 100% 100%;
+
+  /* we have seen that if we scroll a page the background dosent scroll or scrolls sometimes this is achieved using the background-attachment: ; by default it is at 'scroll'  */
+
+  /* we can fix it using no scroll i.e. (fixed) or scroll it as out wish  */
+
+  /* there is also something as local if u want to learn about it read mdn docs  */
+
+  background-attachment: fixed;
+
+  background-attachment: scroll;
+
+  /*____________________________________________________ */
+
+  /* shorthand notation  */
+
+  /* background: color url repeat attachment position; */
+
+  /*____________________________________________________ */
+
+  /* now sometimes as we stretched the image it might scatter and pixelate in order to avoid it we have some commands of background-size: ; which are 'cover' and 'contain' */
+
+  /* in contain it will stretch it by itself such that it does not pixelate abut does not gurantee the full cover of the content  */
+
+  /* in cover all the content will be covered by stretching but it cuts the image by itself from somehwere or the other so the bg may differ in appearnce on different devices it shopuld be used when the bg is not important  */
+
+  /* yahan cover mei image ko bada karke lagata hai kheechta nahi hai whereas in % wala image kheechta hai   */
+
+  /* cover mei bina aspect ratio kharab kiye full content cover krega  */
+
+  background-size: contain;
+
+  /* shortcut to write all of them in one line like the border is background:color image repeat attachment  position ; */
+
+  /* using multiple background  */
+
+  background-color: yellow;
+
+  background-image: url("./1.jpeg");
+
+  /* yeh dono dal do dono use hogaya hogaya multiple usage */
+
+  /* using two image now  */
+
+  background-color: yellow;
+
+  background-image: url("./2.jpeg"), url("./3.png");
+
+  /* but abhi aise mei only one image will be visible we need to give bg position too  */
+
+  background-position: left bottom, right top;
+
+  /* aagaya ab dono image  */
+}

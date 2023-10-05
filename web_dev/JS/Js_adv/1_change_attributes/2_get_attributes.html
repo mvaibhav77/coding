@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn2" name="BUTTON">
+        Send
+    </button>
+
+    <script>
+
+      // GET TO KNOW THE VALUE OF THE ATRTRIBUTE GIVE :
+
+      let btn2 = document.getElementById("btn2");
+
+      // if we want to the value of the name attribute which is already set for button2 we do :
+
+      //   btn2.getAttribute("name of attribute whose value we wan to know ");
+
+      let value = btn2.getAttribute("name");
+
+      console.log(value);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #cover {
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        margin: 150px;
+      }
+
+      /* rotate angle can be given individually using 
+      rotateX / Y / Z  or altogether using rotate3d(x,y,z,angle) */
+
+      /* the x y z are given in numbers the angle value is given in degree  */
+
+      /* rotate simply used to rotate in x y and z axis respectively  */
+
+      /* just the change is we have 3 axis now isntead of 2 as in 2d transform  */
+
+      #content {
+        height: 200px;
+        width: 200px;
+        background-color: yellowgreen;
+
+        /* rotating only on the x axis  */
+
+        transform: perspective(300px) rotate3d(50, 0, 0, 30deg);
+
+        /* rotating only on the y axis  */
+
+        transform: perspective(300px) rotate3d(0, 0, 50, 30deg);
+
+        /* rotating only on the z axis  */
+
+        transform: perspective(300px) rotate3d(50, 0, 0, 30deg);
+
+        /* rotating only on the y,z axis  */
+
+        transform: perspective(300px) rotate3d(0, 50, 50, 30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cover">
+      <div id="content"></div>
+    </div>
+  </body>
+</html>

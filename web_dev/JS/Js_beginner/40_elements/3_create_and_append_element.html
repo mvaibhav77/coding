@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- how to create a new html element and add it  -->
+
+    <!-- append : no replaing but adding new content after the existing content ends  -->
+
+    <!-- inner html se we used to remove the existing content and replace with a new one  -->
+
+    <div id="intro">
+      <p>This Is A Parahgraph</p>
+    </div>
+
+    <script>
+      let ele = document.getElementById("intro");
+
+      // 1. CREATE Elements :
+
+      // say we want to create a heading after parahgraph  :
+
+      let h1 = document.createElement("h1");
+
+      // attach it after the end of parahgraph i.e isnide the div :
+
+      ele.appendChild(h1);
+
+      // but we see that the content is empty inside the h1 tag as we did not give any heading to it as content
+
+      // so to view it we need to inspect teh browser page
+
+      // 2. APPEND CONTENT [using method] : 
+
+      let text = document.createTextNode("This Is Heading 1");
+
+      // we add the content we want inside the ehading tag with the present content of the heading .. the present content is empty as nothing is there 
+
+      h1.appendChild(text);
+
+      // we now again attach the heading with the parah tag in append mode ...
+
+      ele.appendChild(h1);
+
+      // 3. ADD CLASS / ID TO NEW ELEMENT : 
+
+      h1.className = "heading";
+      h1.id = "heading-id";
+
+      // 4. if we want to add content appendign the body tag i.e aftet the script ends  : 
+
+      let textBody = document.createTextNode("This Is Body Text");
+
+      document.body.appendChild(textBody);
+
+      // 5. APPEND CONTENT [USING PROPERTY] : 
+
+      let h2 = document.createElement("h2");
+
+      h2.textContent=" Heading 2 ";
+
+      // doing ele.appendChild means adding it as sibling with the h1 tag 
+
+      // using h1.appendChild means adding it as  achild of h1 tag : 
+
+      ele.appendChild(h2);
+
+      // 6. READ THROUGH .textContent : 
+
+      // textContent not only does assign value to created elements but are also used to read content from the elements
+
+      console.log(h1.textContent);
+
+      // this displays the content of the h1 tag in CONSOLE area !! 
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Click Here</button>
+
+    <script>
+      // we can also add multiple evenet listener to same element as :
+
+      let btn = document.getElementById("btn");
+
+      btn.addEventListener("mouseover", function mouse() {
+        console.log("mouse over");
+      });
+
+      
+      btn.addEventListener("mouseout", function mouse2() {
+        console.log("mouse out");
+      });
+
+      // now in console we can see the pop up as soon as we hover andn exit the button 
+      
+    </script>
+  </body>
+</html>

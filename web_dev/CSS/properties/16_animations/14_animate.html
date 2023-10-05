@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .animate {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        animation-name: animate;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;
+      }
+      @keyframes animate {
+        0% {
+          background-color: red;
+        }
+        25% {
+          width: 200px;
+        }
+        50% {
+          background-color: yellow;
+        }
+        75% {
+          width: 100px;
+        }
+        100% {
+          background-color: orange;
+        }
+      }
+
+      .animate2 {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        animation-name: animate;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        animation-timing-function: ease-in;
+      }
+
+      @keyframes animate2 {
+        0% {
+          background-color: red;
+        }
+        25% {
+          width: 200px;
+        }
+        50% {
+          background-color: yellow;
+        }
+        75% {
+          width: 100px;
+        }
+        100% {
+          background-color: orange;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animate"></div>
+    <hr>
+    <div class="animate2"></div>
+  </body>
+</html>

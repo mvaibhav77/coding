@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- this is done where section of an image genrate separate links like the laptop pic generates the link to a laptop where as the mobile pic generates the link to a mobile  -->
+
+    <!-- we used thje site image map generator to generate cordinates for the iamge links to be created  -->
+
+    <img src="desk.jpeg" usemap="#image_map" />
+    <map name="image_map">
+      <area
+        alt="laptop"
+        title="laptop"
+        href="https://www.amazon.in/HP-i7-12800HX-Graphics-Response-17-ck1022TX/dp/B0BBMRNG18/ref=sr_1_5?keywords=laptop+omen&sr=8-5"
+        coords="99,0,252,116"
+        shape="rect"
+      />
+      <area
+        alt="mobile"
+        title="mobile"
+        href="https://www.amazon.in/Samsung-Storage-MediaTek-Octa-core-Processor/dp/B0BMGB2TPR/ref=sr_1_3?keywords=mobile&sr=8-3"
+        coords="257,54 282,54 286,103 260,105 257,54 "
+        shape="polygon"
+      />
+    </map>
+  </body>
+</html>

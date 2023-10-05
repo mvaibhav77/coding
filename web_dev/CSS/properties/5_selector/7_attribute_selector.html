@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* attribute selector  */
+
+      a[target] {
+        /* here we specified that the a href links having the target attribute only should ahve these properties  */
+
+        color: black;
+        background-color: orange;
+        text-decoration: none;
+      }
+
+      /* here we use the linka s an attribute selector means all the links which are links to go to google.com are going to ahve background color green  */
+
+      a[href="https://www.google.com"]
+      {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The [attribute] selector is used to select elements with a specified attribute. -->
+    <a href="https://www.google.com">Google</a>
+
+    &nbsp;
+
+    <a
+      href="https://www.w3schools.com/css/tryit.asp?filename=trycss_sel_attribute"
+      target="_blank"
+      >W3School</a
+    >
+
+    &nbsp;
+
+    <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+  </body>
+</html>

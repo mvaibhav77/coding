@@ -1,0 +1,32 @@
+p {
+  color: red;
+}
+
+/* id used when we want individual elements to be styled separately they may / maynot belong toa certain class  */
+
+
+/* ID name needs to be unique throughout the html file and an element can have only one id   */
+
+#p3 {
+  color: blue;
+}
+
+/* se we applied green to all the elements of a single class rather than giving individual ids and styling them separately this is when we use class selector when we want to just aaplly a particular kinda of styling to a certain elements belonging to a particular class  */
+
+.green-text {
+  color: green;
+}
+
+/* element of the same class but also with an id styled differently from others  */
+
+#heading {
+  font-size: 50px;
+}
+
+
+/* for the heading having two class names we used the other name to apply the underline property to it   */
+
+.underline
+{
+  text-decoration: underline;
+}

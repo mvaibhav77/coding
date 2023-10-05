@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <!-- id are always unique in a HTML document  -->
+
+ <ul>
+    <li>List 1</li>
+    <li id="second">List 2</li>
+    <li>List 3</li>
+ </ul>
+
+ <script>
+    
+// DOM ka parent object hai document usi ke andr humein getElementById milta hai 
+
+// to select property we need object means document 
+
+// also we need to store it somewhere to say ek variable mei karlete hai 
+
+// if we select id which does not exist then returns NULL
+
+// select element by id ke element ko view karne se pura element line dikahyega  like <li id=" "> content</li> 
+
+let e = document.getElementById("first");
+
+console.log(e);
+
+let ele = document.getElementById("second");
+
+console.log(ele);
+
+// usign innerHTML we can view the present content too as : 
+
+// this is to get value inside the id 
+
+console.log(ele.innerHTML); // List 2
+
+// now as we have slected an id now we can manipulate the content that id contains by usign .innerhtml
+
+ele.innerHTML = "hello";
+
+// changed to hello 
+
+console.log(ele.innerHTML);
+
+ </script>
+</body>
+</html>

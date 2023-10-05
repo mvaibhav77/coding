@@ -1,0 +1,31 @@
+/* now remember what we saw previously that code reads from top to bottom and the bottom most is gicven highest priority and applied is when we style them uding the same tag say id tag only or calss tag only etc ....  eg :- */
+
+/* .green-text{
+color: black;
+}
+
+.green-text
+{
+  color: antiquewhite;
+} */
+
+/* this kinda situation but what we just wrote above is not the same as this (SAME SELECTOR) */
+
+/* here we used the different id class and name of the element to assign color attribute  
+(DIFFERENT SELECTOR) */
+
+/* PRIORRITY : ID selector >CLASS selector >ELEMENT selector */
+
+/* means the heading will be blue at last  */
+h1 {
+  color: black;
+}
+
+.green-text {
+  color: aquamarine;
+}
+
+#heading {
+  color: blue;
+}
+

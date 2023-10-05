@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #text {
+        border: 2px solid black;
+        width: 200px;
+        height: 500px;
+
+        /* the bigger word goes out of bounds of div tag in such cases we can use word-wrap: ; tag  */
+
+        word-wrap: break-word;
+
+        /* now the word will break at the bounds of the div id text  */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="text">
+      <p>
+        Lorem ipsum dolor sit amet consectetur
+        adipisicinghuisdfhsdbfsdhjfgsyufghjsdfgsdhfg
+        <!-- /*this is a much longer work*/ -->
+        elit. Ratione iste vitae nemo sit quo exercitationem commodi veritatis
+        est voluptatum, voluptatibus non velit corrupti expedita at doloribus
+        itaque? Laudantium, officiis suscipit!
+      </p>
+    </div>
+  </body>
+</html>

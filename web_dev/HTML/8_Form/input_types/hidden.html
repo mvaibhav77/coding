@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <!-- mark it it is used when we want certain details to be sent when the form is submitted but does not want the user to change it ... it is there but not visible to user on the display  -->
+
+    <input type="hidden" id="custId" name="custId" value="3487">
+
+    <!-- the value 3487 is not dspalyed but is passed on to server when form is submitted hidden internally 
+     -->
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* to add scroll to our page  */
+
+        height: 2000px;
+        width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- scroll event jb user koi webpage pe scrolling karra hai toh humein pata chal jayega  -->
+
+    <h1>Hello</h1>
+
+    <script>
+      // ab scroll event humein chaiyea throughout the screen ka pata chale jb bhi scroll karein page - so we use  window.addEventListener('scroll', function name / anonymous function () )
+
+      // external event addition
+
+      window.addEventListener("scroll", function scroll() {
+        console.log("scrolling");
+      });
+
+      // if we want to know ki scroll up / down so we use 'wheel'
+
+      // there are 2 properties deltaX and deltaY
+
+      //deltaX : Horizontal scroll
+
+      //and
+
+      //deltaY : vertical scroll janne ke liyea
+
+      //deltaY is > 0 if we scroll down (deltaX<0)
+
+      // deltaY is < 0 if we scroll up
+
+      // now all this data about scroll up / down is stored in a variable so for this we pass an argument in the function
+
+      // vertical scrolling 
+
+      window.addEventListener("wheel", function wheel(event) {
+        if (event.deltaY < 0) {
+          console.log("scrolling up");
+        } else if (event.deltaY > 0) {
+          console.log("scrolling down");
+        }
+      });
+
+
+    </script>
+  </body>
+</html>

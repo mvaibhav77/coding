@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+.slide img {
+width: 100%;
+}
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+}

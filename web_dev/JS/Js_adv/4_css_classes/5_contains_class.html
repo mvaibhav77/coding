@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .color {
+        background-color: orange;
+        color: black;
+      }
+
+      .dim {
+        border: 3px solid red;
+        padding: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box" class="color">
+      <p>This is Dummy text</p>
+    </div>
+
+    <script>
+      // if we want to know if a classs is present or not :
+
+      let box = document.getElementById("box");
+
+      // we use .contains : 
+
+      // we store the t/f value ina  variable and dispaly the value later : 
+
+      let value = box.classList.contains("color2");
+
+      let value2 = box.classList.contains("color");
+
+      console.log("class color2 : "+value); //F
+
+      console.log("class color : "+value2); // T
+
+
+    </script>
+  </body>
+</html>

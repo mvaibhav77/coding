@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        border: 2px solid black;
+
+        /* using visibility hidden also we can hide what so ever content we want to hide  */
+
+        /* but when we do this the space of div 1 is not occupied by someone else .. rehta hai space whi .. jbki (dispaly:none;) mei space is of div1 nahi rhega it will be occupied by other elements  */
+
+        visibility: hidden;
+
+        height: 300px;
+
+        width: 500px;
+      }
+
+      #div2 {
+        border: 2px solid black;
+
+        height: 300px;
+
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">div1</div>
+
+    <div id="div2">div2</div>
+  </body>
+</html>

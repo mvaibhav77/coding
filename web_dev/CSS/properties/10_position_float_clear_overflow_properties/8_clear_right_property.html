@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+      p{
+        border: 2px solid black ;
+
+        /* as the contents were overflowing from the container tag we add the overflow auto to contain them within the container  */
+        
+        overflow: auto;
+      }
+
+
+      #img1 {
+        float: right;
+        height: 225px;
+      }
+
+      /* The clear property controls the flow next to floated elements. */
+
+      /* The clear property specifies what should happen with the element that is next to a floating element. */
+
+      /* clear can be applied to a floated or even a non floated element too  */
+
+      /* clear : none/left/right/both */
+
+      /* 
+      none
+      Is a keyword indicating that the element is not moved down to clear past floating elements.
+
+      left
+      Is a keyword indicating that the element is moved down to clear past left floats.
+
+      right
+      Is a keyword indicating that the element is moved down to clear past right floats.
+
+      both
+      Is a keyword indicating that the element is moved down to clear past both left and right floats. */
+
+
+      /* YAAD RKHNA : clear hamesha succeding box / image mei lagaskte ho preceding wale mei nhi means img2 mei clear lagake img 2 ko haatskte hai img1 mei clear lagake img2 ko nhi  */
+
+      #img2 {
+        float: right;
+
+        /* if we want no floating elements to the right of the image we clear the right side using clear property  */
+
+        /* clear right mtlb mere right clear kardo koini hona chaiyea  */
+
+
+        clear: right;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <img id="img1" src="./border1.jpg" alt="" />
+
+      <img id="img2" src="./border 2.png" alt="" />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis
+      repudiandae at hic ea vero totam, asperiores, deserunt tenetur, corrupti
+      quas magni architecto? Facere suscipit ullam quibusdam ea ut omnis
+      eligendi dolorum perspiciatis minus, quaerat voluptatum quia non tempora
+      aliquid quisquam magnam cumque natus, dolor nihil a delectus? Placeat quis
+      eligendi animi sequi mollitia laudantium quos possimus repudiandae quia
+      veritatis debitis esse alias excepturi iste, ab consectetur officiis
+      dignissimos molestias qui ratione vero totam inventore! Aperiam, dolore
+      sit ipsam quod ratione expedita provident nostrum. Voluptates doloremque
+      ipsa nihil id earum, amet velit commodi! Dignissimos veniam rem ratione
+      recusandae autem? Quisquam provident necessitatibus ratione veniam quos!
+      Nobis quo nihil ullam iure, animi error cumque perferendis atque quas ex.
+      Unde, aperiam a libero nobis ducimus alias odit at sed et ad beatae vitae
+      obcaecati corrupti in praesentium. Nisi, mollitia tempora! Error animi
+      cupiditate provident magnam! Accusamus quia ducimus iste nesciunt officia.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odio quo earum nam dolores et illum expedita atque inventore esse neque dolore dignissimos voluptates reiciendis itaque debitis, molestiae sed, aliquam natus odit eveniet maiores mollitia. Ad nesciunt doloribus itaque cupiditate quam vitae consequuntur labore sit maxime aliquam. Suscipit, impedit expedita! Fugiat dicta iusto debitis! Perspiciatis eveniet asperiores cumque quisquam atque velit, consequuntur facilis aut, quod at iusto ex iste nam optio est ullam harum similique autem laborum deserunt voluptas. Quo, laudantium. Deleniti, expedita autem dignissimos omnis ullam dolore neque sit est, quibusdam corporis provident blanditiis. Dolor maiores possimus sed beatae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae dolorem praesentium nemo asperiores fugiat natus blanditiis in beatae, magnam molestias optio saepe aspernatur iste explicabo consectetur delectus. Facilis doloremque ipsa vitae fuga perspiciatis, eum deserunt ea! Dignissimos eum quaerat consectetur ipsam distinctio eligendi necessitatibus ducimus recusandae, doloremque accusamus optio officia?
+    </p>
+  </body>
+</html>

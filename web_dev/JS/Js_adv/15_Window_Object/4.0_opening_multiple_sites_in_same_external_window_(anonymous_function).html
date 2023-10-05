@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn1">Google</button>
+
+    <button id="btn2">Yahoo</button>
+
+    <script>
+      //select element :
+
+      let btn1 = document.getElementById("btn1");
+
+      let btn2 = document.getElementById("btn2");
+
+      //open a new window for that we use : window.open();
+
+      // there are three parameters that are passed here : 'url' , 'name' , features
+
+      // url : contains the link of the site that we want to open
+
+      // we can declare  variable that stores the url and can use that variable at the place of url too
+
+      // features contains the description of the new window that is being openend  ;height widht left top se kitta dur etc ... LOOK IN MDN
+
+      // name : name of the new window  that is being opened
+
+      // there are also predefined values that can be given to the name : _parent , _blank , _top , _self
+
+      // _blank : means in a new tab
+
+      //_parent : means that the page opens on the same page only
+
+      let features = "height=500px;width=500px;";
+
+      let url = "https://www.google.com/";
+      
+      btn1.addEventListener("click", function () {
+        window.open(url, "window", features);
+      });
+
+      // now we see the importance of the name element :
+
+      // say we opened the google page now we want to open the yahoo page but not on a new page but on the existing window only ... jiska name hum google diye thee
+
+      // agar humein chaiyea ki same window pe hee saare links khule toh same name is passed to the others as well
+
+      // koi naya window nhi khula whi window change hogaya ..
+
+      btn2.addEventListener("click", function () {
+        window.open("https://www.yahoo.com/", "window");
+      });
+
+       //Please note that modern browsers are often designed to prevent websites from changing the URL of already opened windows due to security concerns. This means that while this code may work, it could be blocked by browser security mechanisms or pop-up blockers.
+
+       // so they may open in separate windows even after same window name .. if we want them to open within the same window we have to refer to 4.3
+
+    </script>
+  </body>
+</html>

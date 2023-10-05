@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <style>
+      body {
+        padding: 50px 100px;
+      }
+      h1 {
+        text-align: center;
+      }
+      #container {
+        text-align: center;
+        background-color: #008080;
+        padding: 50px;
+      }
+      .input {
+        /*  to display side by side  */
+
+        display: inline-block;
+      }
+      .inp {
+        padding: 5px 10px;
+        margin: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        width: 250px;
+        text-align: center;
+      }
+      label {
+        font-size: 28px;
+      }
+      #equal {
+        font-size: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <div id="container">
+      <div class="input">
+        <label>Celcius</label><br />
+        <input type="number" placeholder="0" id="cel" class="inp" />
+      </div>
+      <div class="input" id="equal">=</div>
+      <div class="input">
+        <label>Fahrenheit</label><br />
+        <input type="number" placeholder="32" id="fah" class="inp" />
+      </div>
+    </div>
+
+    <script>
+      // selecting elements
+
+      let cel = document.getElementById("cel");
+
+      let fah = document.getElementById("fah");
+
+      //add event to elements :
+
+      //we want ki input pe cahnges aaye toh uske liyea event hota hai : 'input'
+
+      cel.addEventListener("input", function () {
+        // console.log("celcius changed"); //chck purpose
+
+        // now to retrieve the data entered in the element cel we store it in a variable ..
+
+        // the current data is stored in variable using the this.value context.
+
+        let c = this.value;
+
+        // conversion of celcius -> fahrenheit
+
+        let f = (c * 9) / 5 + 32;
+
+        // if want to control the number of decimal digits to be displayed in fahrenheit :
+
+        // for this we use the Number.isInteger(argument)
+
+        // this returns the T/F if the value is integer / not
+
+        // we want ki when it is not integer -> when float to confine to 4 decimal places
+
+        if (!Number.isInteger(f)) {
+          //float decimal value control
+
+          // to confine to 4 decimal palces we use .toFixed(number of places)
+
+          // stored it in teh same variable again
+
+          f = f.toFixed(4);
+        }
+
+        // no we want ki value entered in celcius converted to fahrenheit need to be displayed in the fahrenheit block for that we select the fahrenheit element and pass on the value using .value
+
+        fah.value = f;
+      });
+
+      fah.addEventListener("input", function () {
+        // console.log("fahrenheit changed");
+
+        // retrieve value :
+
+        let f = this.value;
+
+        //convert value:
+
+        let c = (f - 32) * (5 / 9);
+
+        // control decimal places
+
+        if (!Number.isInteger(c)) {
+          //float decimal value control
+
+          c = c.toFixed(4);
+        }
+
+        //store value in celcius to be displayed in celcius block .
+
+        cel.value = c;
+      });
+    </script>
+  </body>
+</html>

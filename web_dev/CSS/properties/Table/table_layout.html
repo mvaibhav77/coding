@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        
+        border: 1px solid black;
+
+        border-collapse: separate;
+
+        /* to hide empty cells from the table  */
+
+        empty-cells: hide;
+
+        /* to view table layout more clearly we fix a width for it  */
+        width: 300px;
+
+        /* OR  */
+
+        width: 100%;
+
+        /* table layout auto is default applied by the browser  */
+
+        /* in table layout auto the browser itself decides rthe best suitable way to fix and display the table and contents on the page   */
+
+        table-layout: auto;
+
+        /* in the fixed attribute every column is same as the other irrespective of good display yeh sb ko ek jaise rkhne ke liyea krta hai  */
+
+        table-layout: fixed;
+
+      }
+
+      th {
+        border: 1px solid black;
+
+      }
+
+      td {
+        border: 1px solid black;
+
+      }
+
+      caption {
+        border: 1px solid black;
+        caption-side: bottom;
+
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <table>
+        <!-- border yahan nahi lagare css mei akrenge  -->
+
+        <caption>
+          <b>Tabel CSS</b>
+        </caption>
+        <tr>
+          <th>Heading 1</th>
+          <th>Heading 2</th>
+          <th>Heading Three Demo</th>
+        </tr>
+
+        <tr>
+          <td>content 1</td>
+          <td>content 2</td>
+          <td>content 3</td>
+        </tr>
+
+        <tr>
+          <td>content 4</td>
+          <td>content 5</td>
+          <td></td>
+        </tr>
+      </table>
+    </body>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- flexbox & grid is a very powerful tool ... used to create different layouts  -->
+
+    <!-- here we will elarn about flex box 
+    
+     flexbox is a 1-D layout method 
+    
+     flex box = flexible box 
+    
+    a container where flex box is applied is called flex box container 
+    
+     the items inside it are called flex box item 
+    
+    the x axis is : main axis 
+    
+     the y axis is : cross axis 
+    
+     left most and right most borders are called : main start and end 
+    
+    top and bottom most borders are called cross start and cross end 
+     -->
+
+    <!-- by default direction of flex box elements is row wise  -->
+
+    <style>
+      .container {
+        background-color: beige;
+        border: 4px solid black;
+        margin: 2px;
+        padding: 2px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        flex-direction: row;
+
+        flex-direction: column-reverse;
+
+        flex-direction: row-reverse;
+
+        /* through flex we created a very good basic responsive design according to screen size it adjusts automatically for different device upto a lot good extent  */
+
+        /* if we write no wrap then the boxes squeeze and next line mei nhi jayengi  i.e size of boxes change */
+
+        flex-wrap: nowrap;
+
+        /* now say abhi toh boxes squeeze hore if we want ki nhi bhai maine 300px agr height dii hai utti hee rehni cahiyea then we use flex-wrap:wrap ; */
+
+        /* if we want no changes to what we made and also display for different devices we use flex-wrap:wrap; */
+
+        flex-wrap: wrap;
+
+        /* now size dosent change of boxes as screen size changes they tend to fall in the next line UNTIL THERE IS SPACE AVAILABLE   */
+
+        /* there is also wrap reverse used to send boxes not at the next bottom line balki upr bhej deta hai  */
+
+        flex-wrap: wrap-reverse;
+        
+      }
+
+      .box {
+        height: 300px;
+        width: 400px;
+        border: 2px solid brown;
+        margin: 2px;
+        padding: 2px;
+      }
+      #box1 {
+        background-color: aqua;
+      }
+
+      #box2 {
+        background-color: blue;
+      }
+
+      #box3 {
+        background-color: orange;
+      }
+
+      #box4 {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Div1</div>
+      <div class="box" id="box2">Div2</div>
+      <div class="box" id="box3">Div3</div>
+      <div class="box" id="box4">Div4</div>
+    </div>
+  </body>
+</html>

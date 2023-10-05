@@ -1,0 +1,19 @@
+html is used to provide skeleton , structure e , description semantics to out page  
+
+where as CSS is used to provide styling as the name suggests to the content of the web page 
+ 
+used to add styles , chng visual appearances etc... 
+
+
+cascading refers to the styling rules say we have a <p> and we add three different assignments of bg-color to it say three different colors then  
+
+
+HTML : what to display 
+CSS : how to display
+
+TYPES TO ADD CSS :  
+ 1. inline  
+ 2. external  
+ 3. inline  
+
+ CSS is not a programing language but yahan prr bhi function and process htoe hai 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* used for font sizes  */
+      
+      /* rem is a relative size attribute  */
+
+      /* this depends on the size of the root element i.e. teh default 16 pixel value only  */
+
+      /* by default what we have is 16 pixels for any text to be displayed on the screen  */
+
+      /* now we set the parent div as size of 10 pixels  */
+
+      /* and did set the size of the child div as 5 rem means that (5*size of root element size (16) ) = 80 pixels */
+
+      #parent {
+        font-size: 10px;
+      }
+
+      #child {
+        font-size: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- default size of 16 pixels of font is used here  -->
+
+    <p>default size of page : 16 pixels</p>
+
+    <br />
+    <br />
+
+    <div id="parent">
+      <div id="child">80 pixels size as rem used !</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- using this we can insert html at any position  -->
+
+    <!-- this is very powerful as pehle dekhe thee ki kisi ek position -> append , insertBefore etc mei sirf ek position pe hee add kr skte thee but yahan 4 hai  -->
+
+    <!-- here we dont need to create any new element it converts text to html -->
+
+    <!--  VARIOUS POSITIONS : -->
+
+    <!-- 1. before begin -->
+
+     <div id="div"> <!--selected -->
+
+        <!-- 2. after begin  -->
+
+        <h2>Heading 2</h2>
+
+        <p>This is P Tag </p>
+
+        <!-- 3. before end  -->
+
+    </div>
+
+    <!-- 4. after end  -->
+
+    <script>
+        let elm = document.getElementById("div");
+
+        // html text 
+
+        let html = '<b> Before Begin</b>';
+        let html2 = '<i> After Begin</i>';
+        let html3 = '<s> Before End</s>';
+        let html4 = '<u> After End</u>';
+
+        // using .insertAdjacentHTML(position , what we want to add as text )
+
+        // before begins mtlb div ke pehle h1 add hoga 
+
+        elm.insertAdjacentHTML('beforebegin',html);
+
+        elm.insertAdjacentHTML('afterbegin',html2);
+
+        elm.insertAdjacentHTML('beforeend',html3);
+        
+        elm.insertAdjacentHTML('afterend',html4);
+
+    </script>
+
+</body>
+</html>

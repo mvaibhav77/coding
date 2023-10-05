@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: cornsilk;
+        padding: 100px;
+      }
+
+      #container {
+        padding: 50px;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <button id="btn">Click Me</button>
+    </div>
+
+    <script>
+      // in event bubbling the event starts with the most specific element i.e the inner most element and follows upwards / outer side :
+
+      // means the button event is captured first then the div then the body element
+
+      // select elements :
+
+      let btn = document.getElementById("btn");
+
+      let div = document.getElementById("container");
+
+      btn.addEventListener("click", btnClick);
+
+      div.addEventListener("click", divClick); 
+
+      document.body.addEventListener("click", bodyClick);
+
+      // now say if we want ki humein chaiyea button click kiya toh bss button hee aana chaieya not div and body too: 
+
+      // for this we use stop propagation ; 
+
+      // this captures and event so we need to apss an argument in the function and then using the argument write.stopPropagation();
+
+      function btnClick(event) {
+
+        console.log("button clicked ...");
+
+        event.stopPropagation();
+
+       // only button clicked aaygea  if we click on button 
+
+       // lekin if we click div toh div and body dono aayega 
+      }
+
+      function divClick() {
+        console.log("div clicked ...");
+      }
+
+      function bodyClick() {
+        console.log("body clicked ...");
+      }
+    </script>
+  </body>
+</html>

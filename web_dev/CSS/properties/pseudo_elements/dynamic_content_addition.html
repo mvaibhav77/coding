@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      h1::before {
+
+        /* if we want to add certain content using css we do it this way  */
+
+        /* say we want to add an image  */
+
+        content: url('./arrow\ \(1\).png')
+
+      }
+
+      /* if we want to add content using css that too aftert certain content we use this  */
+
+      h1::after 
+      {
+        /* by thsi way we can add text content using css  */
+
+        content: " Hello There !!";
+      } 
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- we use pseudo element when we style a specific element or insert image using css  -->
+
+    <!-- the format here for pseudo element is selector :: pseudo-class; -->
+
+    <!-- here we have 2 (:) where as in pseudo class we have only 1 (:) -->
+
+    <h1>Heading</h1>
+
+  </body>
+</html>

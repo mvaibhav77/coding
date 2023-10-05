@@ -1,0 +1,12 @@
+
+    
+    <!-- selector is a way through which we can target any element / multiple elements and apply styles using css as we wish  -->
+
+    <!-- TYPES :
+
+  1. element selector 
+  2. id selector
+  3. class selector
+  4. group selector
+
+  

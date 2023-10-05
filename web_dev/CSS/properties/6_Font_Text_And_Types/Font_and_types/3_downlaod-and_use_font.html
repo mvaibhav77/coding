@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      
+      /* for usign a downlaoded font style we use @font-face  */
+
+      /* not inside this we give an alternative name by which we are going to use it throughout the html doc inside the font-family   */
+
+      /* then we add the src of the text file downlaoded  */
+
+      @font-face {
+        font-family: abc;
+        src: url("./Sweet\ Signature.otf");
+      }
+
+      /* now we use the font downloaded using the alternative name under the font-family for tags we want 
+    */
+
+      h1 {
+        font-family: abc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>heading</h1>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit in sequi
+      vel dolores iusto quos reprehenderit quidem pariatur sunt exercitationem
+      quae eos, fuga corporis voluptatibus fugiat, iste, nostrum veniam! Quasi
+      ipsa architecto ab facere labore illum accusantium libero assumenda animi.
+    </p>
+  </body>
+</html>

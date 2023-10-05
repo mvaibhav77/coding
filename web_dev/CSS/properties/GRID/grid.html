@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        background-color: indianred;
+        padding: 20px;
+
+        /* writing inline grid now it takes up space only whats required by the content and not the whole screen  */
+
+        display: inline-grid;
+
+        /* writing display grid by default behaves as a block element and takes up all te space on the screen  */
+
+        /* also by defualt grid divides in rows only  */
+
+        display: grid;
+
+        /* if we want to divide it into columns we write grid-template-columns: ; */
+
+        /* we need to define the pixels of columns we want if we want 4 rows 4 pixel sizes of columns need to be mentioned  */
+
+        grid-template-columns: 200px 400px;
+
+        /* writing auto means jitta space bacha voh automatically occupy krlega  */
+
+        /* writing auto we mentioned three columns now  */
+
+        grid-template-columns: 200px 400px auto;
+
+        /* writing three auto means teeno barabar set hojayega  */
+
+        grid-template-columns: auto auto auto;
+
+        /* we can also mention column space in percentage ki kitta percentage of space humein uss column ko dena hai  */
+
+        grid-template-columns: auto 50% auto;
+
+        /* do define the size of rows we use grid-template-rows ; */
+
+        /* here too the size of the rows can be given in pixels percentage or auto  */
+
+        grid-template-rows: 100px 200px auto;
+
+        /* if we want ot give gaps  */
+
+        grid-column-gap: 10px;
+
+        grid-row-gap: 10px;
+
+        /* shorthand notation  */
+
+        /* grid-gap: row-gap column-gap; */
+
+        /* if only a single value given in the shorthand notation means dono ke liyea wahi lelega  */
+
+        /* now we know flexbox is good for space management but when we write grid-template-columns: 200px 300px 200px;  now the remaining space is left over on the screen  */
+
+        grid-template-columns: 200px 300px 200px;
+
+        /* auto to remove the sizing of the rows */
+
+        grid-template-rows: auto auto auto;
+
+        /* we can distribute them in the space in x direction  using justify-content  in the left over space */
+
+        justify-content: center;
+
+        justify-content: right;
+
+        justify-content: left;
+
+        justify-content: space-around;
+
+        justify-content: space-between;
+
+        justify-content: space-evenly;
+
+        height: 400px;
+
+        /* now we gave height to teh content we see that the columns tend to take up all the sapce in the y direction which does not look good if we dont wnat this we use align-content  */
+
+        /* if wwe want to align in the y direction we use align-content  */
+
+        align-content: start;
+
+        align-content: end;
+
+        align-content: center;
+
+        /* if we want to give gap between them in y direction we use  */
+
+        align-content: space-between;
+
+        align-content: space-evenly;
+      }
+
+      /* ITEMS PE WORK KARENGE AB CONTAINER NHI  */
+
+      .grid-item {
+        background-color: wheat;
+        border: 2px solid black;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      /* if we want to merge the content of row 1 and row 2 to show content 1 means that the we need to combine the lines 1 2 3  */
+
+      #grid1 {
+        grid-column-start: 1;
+
+        grid-column-end: 3;
+
+        /* short hand notation grid-column:start/end*/
+
+        grid-column: 1/3;
+
+        /* or  grid-column:start/span (number of columns to merge)*/
+
+        grid-column: 1 / span 2;
+
+        grid-column: 1 / span 3;
+
+        /* back to normal  */
+
+        grid-column: 1/1;
+      }
+
+      /* now say we want the content 3 to take colspan  */
+
+      #grid3 {
+        grid-row-start: 2;
+
+        grid-row-end: 4;
+
+        grid-row: 2 / span 3;
+
+        /* in span we mention the number of column to merge and not the line number  */
+
+        grid-row: 2/4;
+
+        /* back to normal  */
+
+        grid-row: 2/3;
+      }
+
+      /* we want the number five to start from two wala content till the 6 wala content  */
+
+      #grid5 {
+        grid-column: 2/5;
+
+        grid-row: 1/3;
+
+        /* or we can also use 
+        grid-area: start-row-line/start-column-line/end-row-line/end-column-line*/
+
+        grid-area: 1/2/3/4;
+
+        grid-area: 1/2 / span 3 / span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS GRID is teh new layout model in css  isse pehle flex box aaya tha -->
+
+    <!-- both flexbox and grid have there own importance  -->
+
+    <!-- flex box mei height width jo bhi set hota hai ek hee row ke liyea hota hai does not affecty otehr rows  -->
+
+    <!-- flex dox is 1 Dimensional layout option where as grid is 2 Dimensional layout option / alignment -->
+
+    <!-- flexbox mei jo bhi likhenge voh agr height set ki toh voh ek row ke liyea hee rhega does not interfere in other rows whereas in grid we can combine rows and columns  -->
+
+    <!-- grid se hum 2 more more rows mei bhi interfere kr skte hai row adn column kuch bhi combine kr skte  -->
+
+    <!-- grid provides us more flexibility -->
+
+    <!-- flex box is good for space distribution -->
+
+    <!-- there are various properties of grid as gridcolumn gridrow gridgap gridlines  -->
+
+    <!-- the grid lines attribute is used when we want to merge columns or rows there we need to specify kahanse kahan tk merge karna hai  -->
+
+    <div class="grid-container">
+      <div class="grid-item" id="grid1">1</div>
+      <div class="grid-item" id="grid2">2</div>
+      <div class="grid-item" id="grid3">3</div>
+      <div class="grid-item" id="grid4">4</div>
+      <div class="grid-item" id="grid5">5</div>
+      <div class="grid-item" id="grid6">6</div>
+      <div class="grid-item" id="grid7">7</div>
+      <div class="grid-item" id="grid8">8</div>
+      <div class="grid-item" id="grid9">9</div>
+    </div>
+  </body>
+</html>

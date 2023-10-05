@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  traverse means to travel from one element to another  -->
+
+     <!-- parent is the head of all the inner tags  -->
+
+    <!-- and siblings are all tags at teh same level  -->
+
+    <h2>Heading 1</h2>
+    <ul> <!-- parent -->
+      <li id="intro">List 1</li> <!-- siblings -->
+      <li>List 2</li> <!-- siblings -->
+      <li>List 3</li> <!-- siblings -->
+      <li>List 4</li> <!-- siblings -->
+    </ul>
+
+    <ul id="select">
+      <li>List a</li>
+      <li>List b</li>
+      <li>List c</li>
+      <li>List d</li>
+    </ul>
+
+    <script>
+      // 1. we are selecting the children first and tehn through teh children we will select the parent.....
+
+      let elm = document.getElementById("intro");
+
+      console.log(elm);
+
+      // now say if we want to select the ul of the li having the id intro :
+
+      // ul is the parent of all the li under it .
+
+      // we select it using the .parentElement property
+
+      let parent = elm.parentElement;
+
+      // now if we want ki li contents ko change karke uske jagah kuch aur likhe we do it this way :
+
+      // parent.innerHTML = "HELLO";
+
+      console.log(parent);
+
+      //__________________________________
+
+      // 2.  now we give id to the parent of the second list : we can see ki hum ab pehle parent select akrre then uske children select karenge ...
+
+      let parent1 = document.getElementById("select");
+
+      console.log(parent1);
+
+      // to select the first li we use first firstElementChild....
+
+      let first = parent1.firstElementChild;
+
+      console.log(first);
+
+      // if we want to select the last li of the ul we do :
+
+      let last = parent1.lastElementChild;
+
+      console.log(last);
+
+      // if we want to select all teh li of the list we do :
+
+      let all = parent1.children;
+
+      console.log(all);
+
+      // replacing all teh elements of the list as :
+
+      for (let i = 0; i < all.length; i++) {
+        all[i].innerHTML = "replaced";
+      }
+
+
+      // _______________________________
+
+
+      // 3. selecting siblings : 
+
+      let sibling1 = document.getElementById("intro"); // sibling 1 selected 
+
+       console.log(sibling1);
+
+       // if we want to select the sibling we need to know which one the next one or the previous one 
+
+       // depending on that we write .nextElementSibling / .previousElementSibling
+
+       let sibling2 = sibling1.nextElementSibling;
+
+       console.log(sibling2);
+
+    </script>
+  </body>
+</html>

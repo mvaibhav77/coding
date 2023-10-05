@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn1">Google</button>
+
+    <script>
+      //select element :
+      let btn1 = document.getElementById("btn1");
+
+      //open a new window for that we use : window.open();
+
+      // there are three parameters that are passed here : 'url' , 'name' , features
+
+      // url : contains the link of the site that we want to open
+
+      // we can declare  variable that stores the url and can use that variable at the place of url too
+
+      // features contains the description of the new window that is being openend  ;height widht left top se kitta dur etc ... LOOK IN MDN
+
+      // name : name of the new window  that is being opened
+
+      // there are also predefined values that can be given to the name : _parent , _blank , _top , _self
+
+      // _blank : means ina new tab
+
+      //_parent : means that the page opens on the same page only
+
+      let features = "height=500px;width=500px;";
+
+      let url = "https://www.google.com/";
+
+      btn1.addEventListener("click", function () {
+        window.open(url, "window", features);
+      });
+
+    </script>
+  </body>
+</html>

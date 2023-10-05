@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        border: 1px solid black;
+      }
+      img {
+        margin: 10px;
+      }
+
+      /* no effect takes place as the position of the image by default is static  */
+
+      /* attributes such as top left right bottom are used to posiiton images on the screen  */
+
+      .img2 {
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-- postion property : -->
+
+    <!-- The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky). -->
+    <!-- when we want to decide where to put what elements on the web page then we use position property -->
+
+    <!-- by default position property applied is "static"  -->
+
+    <!-- static mei hum bata nhi sakte left right top bottom se kitta durrr  even if we do no effect will take place -->
+
+    <!-- we cant apply Z index to it  -->
+
+    <div class="container">
+
+      <!-- image is an inline-block element  -->
+
+      <img
+        src="./dog.jpeg"
+        alt="poster1"
+        height="300px"
+        width="300px"
+        class="img1"
+      />
+
+      <img
+        src="./code.jpeg"
+        alt="poster2"
+        height="300px"
+        width="300px"
+        class="img2"
+      />
+
+      <img
+        src="./coding.jpeg"
+        alt="poster3"
+        height="300px"
+        width="300px"
+        class="img3"
+      />
+
+      <img
+        src="./dop.jpeg"
+        alt="poster4"
+        height="300px"
+        width="300px"
+        class="img4"
+      />
+    </div>
+  </body>
+</html>

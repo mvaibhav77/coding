@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Honme</li>
+        <li>Contact</li>
+        <li>About</li>
+    </ul>
+    <script>
+        let menu = document.getElementById("menu");
+
+        // to clone first we give : 
+
+        //1. A Name of variable to store the clone 
+
+        //2. Name of the id / element we want to clone 
+
+        //3. .cloneNode(true)
+
+        let cloneElm = menu.cloneNode(true);
+
+        // if we dont give a separate id to the cloned one then there will be two of the same id name
+         
+        cloneElm.id = "menu2";
+
+        console.log(cloneElm);
+
+        // what if we done write true : 
+
+        // then the child elements of the list wont be cloned 
+
+        // only the parent i.e the ul will be cloned 
+        
+        //___________________________________
+
+        // no we want to append it means list ke baad list as siblings so parent is body we append in body 
+
+        document.body.appendChild(cloneElm);
+
+    </script>
+</body>
+</html>

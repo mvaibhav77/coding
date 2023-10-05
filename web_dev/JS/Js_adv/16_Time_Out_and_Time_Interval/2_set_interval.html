@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Cancel</button>
+
+    <script>
+      // setInterval is used when we want ki koi event certain interval of time mei bar bar repeat hota rhe
+
+      let inter = setInterval(interval, 2000); // after every two seconds
+
+      function interval() {
+        console.log("interval activated ...");
+      }
+
+      // now we can see in the console log that the pop up comes every 2 seconds !!
+
+      // say we want to cancel the event too after some time toh we created a button by clicking it uske baad se interval mein event activate hona band hojayega
+
+      // here to we need to give the id of the event inteval which we get by assigning a variable tothe setInterval line
+
+      let btn = document.getElementById("btn");
+
+      btn.addEventListener("click", function () {
+        clearInterval(inter);
+      });
+
+      // now after clicking cancel the event trigger on every 2 seconds gets cancelled 
+    </script>
+  </body>
+</html>

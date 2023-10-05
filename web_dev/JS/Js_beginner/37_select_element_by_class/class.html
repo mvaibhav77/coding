@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- id is unique for every element and through id we can select only one element at a time  -->
+
+    <!-- to select multiple elemtns we use class  -->
+
+    <ul>
+      <li class="list">List 1</li>
+      <li id="second">List 2</li>
+      <li class="list">List 3</li>
+    </ul>
+
+    <!--  to select class name we use 
+        getElementbyClassName -->
+
+    <script>
+      let ele = document.getElementsByClassName("list");
+
+      console.log(ele); // collection of list items
+
+      // length of list items we selected we use : length
+
+      console.log("Selected -> " + ele.length + " items");
+
+      // now here the innerHTML wont work as expected coz here we dont have a single element rather we have a number of elements selected
+
+      // for this if we want to cahnge something we need to apply the loops here
+
+      for (let i = 0; i < ele.length; i++) {
+        // changing the contents of the list to hello
+
+        ele[i].innerHTML = " hello";
+        
+      }
+    </script>
+  </body>
+</html>

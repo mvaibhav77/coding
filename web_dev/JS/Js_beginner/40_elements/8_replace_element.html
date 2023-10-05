@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li>Honme</li>
+      <li>Contact</li>
+      <li>About</li>
+    </ul>
+
+    <script>
+      // now we will replace any content of the list dynamically using replace
+
+      // say we want to change the contact to contact us :
+
+      // select parent
+
+      let parent = document.getElementById("menu");
+
+      //create element
+
+      let item = document.createElement("li");
+
+      // assign content to new element which we want to replace withthe contact one
+
+      item.textContent = "Contact Us";
+
+      // now we store the content we want to replace in a a variable
+
+      let replace = parent.firstElementChild.nextElementSibling;
+
+      //.repalce(new item , replacing item )
+      
+      parent.replaceChild(item , replace);
+    </script>
+  </body>
+</html>

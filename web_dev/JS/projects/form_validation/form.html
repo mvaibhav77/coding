@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+
+    <style>
+      body {
+        margin: 0px;
+        background-color: #6495ed;
+        display: flex;
+        justify-content: center;
+
+        /* // align items center won't work we give it a heigth  */
+
+        height: 100vh;
+        align-items: center;
+      }
+
+      #container {
+        text-align: center;
+        background-color: white;
+        height: 400px;
+        width: 350px;
+        padding: 20px 10px 0px 10px;
+        box-shadow: 5px 5px 10px black;
+      }
+      h2 {
+        font-weight: bold;
+        font-size: 28px;
+      }
+      input {
+        padding: 8px;
+        margin: 10px 0px;
+        width: 80%;
+      }
+      #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #button {
+        background-color: #6495ed;
+        width: 100px;
+        box-shadow: 1px 1px 3px black;
+        border: 0px;
+        color: whitesmoke;
+      }
+      #button:hover {
+        cursor: pointer;
+        /* background-color: #4169e1; */
+        color: white;
+        box-shadow: 2px 2px 3px black;
+      }
+      #button:active {
+        transform: translate(2px, 2px);
+        box-shadow: 0px 0px 0px;
+      }
+      .error {
+        color: red;
+        margin: 0px;
+        padding: 0px;
+        width: 280px;
+        text-align: left;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- there are two types of form validation :  -->
+
+    <!-- 1. Server side validation : using server side languages  -->
+
+    <!-- 2.Client side validation  : it is done using Js -->
+
+    <!-- whenver we click submit we need to chck if the information filled is correct / not correct ...  -->
+
+    <!-- rather than sending it to the server to chck and then handling the wrong information input .. we can do it using Js in client side only before sending it to the server side -->
+
+    <div id="container">
+      <h2>Login</h2>
+      <form action="" id="form" onsubmit="return validateForm()">
+        <input type="text" placeholder="User Name" id="username" />
+        <p id="userError" class="error"></p>
+        <input type="password" placeholder="Password" id="password" />
+        <p id="passError" class="error"></p>
+        <input type="submit" id="button" />
+      </form>
+    </div>
+    <script>
+      let username = document.getElementById("username");
+
+      let password = document.getElementById("password");
+
+      let flag = 1;
+
+      // let form = document.getElementById('form');
+
+      //  form.addEventListener('submit',validateForm);
+
+    //   username.addEventListener("focus", focus1);
+
+    //   username.addEventListener("blur", Blur1);
+
+    //   function focus1() {
+    //     username.style.backgroundColor= 'beige';
+    // }
+
+    // function Blur1(){
+    //     username.style.backgroundColor= 'beige';
+    // }
+
+    //   password.addEventListener("focus", focus);
+
+    //   password.addEventListener("blur", Blur);
+
+    //   function focus() {
+    //     password.style.backgroundColor= 'beige';
+    //   }
+    //   function Blur() {
+    //     password.style.backgroundColor = "white";
+    //   }
+
+      function validateForm() {
+        if (username.value == "") {
+          document.getElementById("userError").innerHTML =
+            "Username Required !!";
+          flag = 0;
+        } else if (username.value.length < 3) {
+          document.getElementById("userError").innerHTML =
+            "Min 3 Character Username Required !!";
+          flag = 0;
+        } else {
+          document.getElementById("userError").innerHTML = "";
+          flag = 1;
+        }
+        if (password.value == "") {
+          document.getElementById("passError").innerHTML = "Pasword Required";
+          flag = 0;
+        } else if (password.value.length < 8) {
+          document.getElementById("passError").innerHTML =
+            "Minimum 8 Character Password Required !!";
+          flag = 0;
+        } else {
+          document.getElementById("passError").innerHTML = "";
+          flag = 1;
+        }
+
+        if (flag) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

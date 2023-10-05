@@ -1,0 +1,78 @@
+.margin {
+  /* margin refers to the space between different elements and elements and the page border */
+  padding: 10px 0px;
+  border: 1px solid brown;
+}
+
+body {
+  border: 5px dotted black;
+}
+
+/* margin can be applied in teh same way we can declare separate tags like margin-top/right/bottom/left for it  */
+
+/* OR  */
+
+/* we can also declare margin: top-right-bottom-left; */
+
+/* OR  */
+
+/* we can also declare it as margin : top/bottom left/right  */
+
+#marg {
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+  margin-right: 40px;
+
+
+  margin: 10px 20px 30px 40px;
+
+  margin: 20px 40px;
+
+  /* as margin refers to the gap between the elemets it can also have NEGETIVE value  */
+
+  /* eg:  say if we want to overlap one over another  */
+
+  margin: -30px 20px 30px 40px;
+
+  /* for now elt us make it normal  */
+  margin: 0px;
+
+}
+
+
+/* margin can also be used to centralize a div element or section  */
+
+#marg2
+{
+  width: 500px;
+  margin: auto;
+
+  /* this auto centralises with respect to the x axis now for y axis we need to add value before it  */
+
+  margin: 20px auto;
+
+
+}
+
+/* one of the main events here which is a serious concern is margin collapse  */
+
+  /* means say we have two div tags and we give the upper div tag a margin-bottom: 20px; and the lower div tag a margin-top: 50px; this does not mean that the gap between them will be 70px  */
+
+  /* rather in such cases the margin gap is that that value which is greater one among the two means that the margin gap will be 50px  */
+
+  /* THIS IS REFERRED TO AS MARGIN COLLAPSE  */
+
+#marg3
+{
+  margin-bottom: 20px;
+}
+
+#marg4
+{
+  margin-top: 50px;
+}
+
+
+/* now the gap between them reamins 50px only  ->   margin collapse  */

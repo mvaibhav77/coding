@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .container {
+        background-color: beige;
+        border: 5px solid black;
+        height: 800px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .box {
+        height: 80px;
+
+        width: 300px;
+
+        border: 2px solid black;
+
+        background-color: blue;
+
+        margin: 10px;
+
+        border-radius: 10px;
+
+        position: relative;
+
+
+        /* transition means basically moving from one state to another whereas animation is a series of complex movement  */
+        
+        /* to add animation we specify first an animation name  */
+
+        /* we plan toc reate an animation where the box moves from the left most corner to the right most corner  */
+
+        animation-name: movement;
+
+        /* animation duration specifies how long will it take to fully complete the animation  */
+
+        /* if it is not specified no animation will occur as default value is 0 */
+
+        /* it can be given in seconds and milli seconds  */
+
+        animation-duration: 5s;
+
+        /* how amny times do we want to repeat the animation is set by iteration count  */
+
+        /* if we want it to continue life long  we set the value as infinite  */
+
+        animation-iteration-count: 2;
+
+        animation-iteration-count: infinite;
+
+        /* how long do we want to wait before starting the animation ?? it is set by animation delay  */
+
+        animation-delay: 2s;
+
+        /* after doing all this we will see the box moving  */
+
+        /* but to our notice we see that it moves fast at the beginning and slowes down at the end  these can be set using the animation-timing-function specifying various speed curves */
+
+        /* 
+            The animation-timing-function property can have the following values:
+
+         ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+
+          linear - Specifies an animation with the same speed from start to end
+
+          ease-in - Specifies an animation with a slow start
+
+          ease-out - Specifies an animation with a slow end
+
+          ease-in-out - Specifies an animation with a slow start and end
+
+          cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function */
+
+        animation-timing-function: linear;
+
+        animation-timing-function: ease-in;
+
+        animation-timing-function: ease-out;
+
+        animation-timing-function: ease-in-out;
+
+        /* as we added the cubic beizer curve when we inspect we can see htat we get an option to select multiple types of beizer curve from it  */
+
+        animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+
+        animation-timing-function: linear;
+
+        /* now we see that the box moves from left to right then disapperas from there and then again appears on the left and continues  */
+
+        /* what if we want ki voh gayab na ho wahna se wapas left aaye then right jaaye in a loop  */
+
+        /* in such case we use animation-direction: ; property  */
+
+        /* The animation-direction property specifies whether an animation should be played forwards, backwards or in alternate cycles.
+
+        The animation-direction property can have the following values:
+
+        normal - The animation is played as normal (forwards). This is default
+
+        reverse - The animation is played in reverse direction (backwards)
+
+        alternate - The animation is played forwards first, then backwards
+
+        alternate-reverse - The animation is played backwards first, then forward */
+
+        animation-direction: alternate;
+
+        /* reverse mtlb aab end se strt hoga aur strt pe khtm  */
+        animation-direction: reverse;
+
+        /* alternate reverse means ki strt ulte se hoga and alternate karte rhega */
+
+        animation-direction: alternate-reverse;
+
+        animation-iteration-count: 1;
+
+        animation-direction: normal;
+
+        /* if we want to decide what should happen when the element is not in the animation phase we candecide it by using the fill mode  */
+
+        /* if we want to stop the animation at the end we use forwards */
+
+        animation-fill-mode: forwards;
+
+        /* if we want to stop the animation at the start we use backwards */
+
+        animation-fill-mode: backwards;
+
+        /* if we want nothing to happen we use none whihc is the default value  */
+
+        animation-fill-mode: none;
+
+        /* if we want bopth the backwards and forwards to be applied we use both  */
+
+        /* it retains the initial state before the animation starts and also retains the final state after the animation ends  */
+
+        animation-fill-mode: both;
+
+        /* short hand notation  */
+
+        /* @keyframes duration | easing-function | delay 
+        /* iteration-count | direction | fill-mode | play-state | name */
+
+        animation: 5s linear 1s infinite alternate none running rightmovement;
+      }
+
+      /* when we want css style to change from one form to another we use keyframe ... here the animation change gradually from current style tp another at a certain time  */
+
+      /* syntax is @keyframe animation-name
+          {  from{initial styling }
+
+              to {destination styling }
+           } */
+
+      /* from means 0% (start) and to means 100% (end) */
+
+      /* we can also use percentage so as to what to be displayed at what percentage of completion  */
+
+      /* keyframe holds all the changes that are going ot occur in the elements position color style etc...  */
+
+      @keyframes rightmovement {
+        from {
+          top: 0px;
+          left: 0px;
+        }
+
+        to {
+          top: 0px;
+          left: 1350px;
+        }
+      }
+
+      .box1 {
+        height: 80px;
+
+        width: 300px;
+
+        border: 2px solid black;
+
+        background-color: blue;
+
+        margin: 10px;
+
+        border-radius: 10px;
+
+        position: relative;
+
+        animation: 5s ease-in 1s infinite alternate none running leftmovement;
+      }
+
+      @keyframes leftmovement {
+        from {
+          top: 500px;
+          left: 1350px;
+        }
+
+        to {
+          top: 500px;
+          left: 0px;
+        }
+      }
+
+      .circle {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        background-color: blue;
+        animation: 5s ease-out 1s infinite alternate none running circle;
+        position: relative;
+      }
+
+      @keyframes circle {
+        0% {
+          background-color: red;
+          top: 0px;
+          left: 0px;
+        }
+
+        25% {
+          background-color: orange;
+          top: 0px;
+          left: 1600px;
+        }
+
+        75% {
+          background-color: blue;
+          top: 500px;
+          left: 800px;
+        }
+
+        100% {
+          background-color: green;
+          top: 0px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- jb hamara element ek particular style se kisi dusare style mei shift hota hai use hum animation kehte hai  -->
+
+    <div class="container">
+      <div class="box"></div>
+      <br />
+      <div class="circle"></div>
+      <br />
+      <div class="box1"></div>
+    </div>
+  </body>
+</html>

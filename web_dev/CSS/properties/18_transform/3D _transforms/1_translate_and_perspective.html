@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #cover {
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        margin: 150px;
+      }
+
+      /* using transform we can also apply 3d effects to the containers we want  */
+
+      /* this is done using perspective and perspective origin  */
+
+      /* the perspective comes under the transform: only as rotate and others  */
+
+      /* perspective is from how far we are looking at it  / how much depth we want in the element  */
+
+      /* translate 3d is used to position element in all the 3 axis insteaad of 2 as of in 2d transform  */
+
+      /* the x y z values of it are given in px  */
+
+      /* to translate separately in X Y Z axis we can use translateX / Y / Z */
+
+      #content {
+        height: 200px;
+        width: 200px;
+        background-color: yellowgreen;
+
+        /* if we want to translate in x axis  */
+
+        transform: perspective(300px) translate3d(50px, 0px, 0px);
+
+        /* if we want to traslate in y axis  */
+
+        transform: perspective(300px) translate3d(0px, 50px, 0px);
+
+        /* if we want to traslate in z axis  */
+
+        /* -ve value mtlb andar ki trf +ve value mtlb bahar ki trf  */
+
+        transform: perspective(300px) translate3d(0px, 0px, -50px);
+
+        /* in all three axis  */
+
+        transform: perspective(300px) translate3d(50px, 50px, 50px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cover">
+      <div id="content"></div>
+    </div>
+  </body>
+</html>

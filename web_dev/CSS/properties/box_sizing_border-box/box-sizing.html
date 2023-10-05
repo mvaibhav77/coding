@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #div1 {
+        background-color: aqua;
+        border: 1px solid black;
+        height: 100px;
+        width: 500px;
+      }
+
+      #div2 {
+        background-color: orange;
+
+        height: 100px;
+        width: 500px;
+
+        padding: 20px;
+
+        border: 5px solid black;
+
+        /* as we apply border or padding to div 2 it increased in size altough the height and width of both the div tags were the same  */
+
+        /* this happens because 
+        box-sizing: content-box; 
+        is the default taht is applied  */
+
+        /* if we want ki box ka size na badhe on adding padding and borderts we use
+         box-sizing: border-box; */
+
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">Div 1</div>
+
+    <hr />
+
+    <div id="div2">Div 2</div>
+  </body>
+</html>

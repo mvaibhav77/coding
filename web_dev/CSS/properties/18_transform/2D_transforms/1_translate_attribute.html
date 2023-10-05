@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #wrapper {
+        padding: 20px;
+        margin: 20px;
+      }
+
+      /* remember anchor tag is inline element  */
+
+      /* 2d transform wont work unless coverted to block or inline-block */
+
+      /* transform: translate( x , y ) is used to position an element according to the x and y cordinates given  */
+
+      /* the value of cordinates can be both positive and negetive  */
+
+      a {
+
+        /* to remove underline  */
+
+        text-decoration: none;
+
+        background-color: aqua;
+
+        padding: 10px 20px;
+
+        color: red;
+
+        /* converting the element to inline-block so as to use translate  */
+
+        /* display: inline-block;
+
+        transform: translate(60px ,50px); */
+        
+      }
+
+      /* now creating a bit cheeky thing ki jaise hee hover karein voh 50,50 pe aajaye  */
+
+      /* for it to work upr wala commented hona chaiyea display and transform  */
+
+      a:hover {
+        display: inline-block;
+
+        transform: translate(60px, 50px);
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- with 2d transform we can scale , move , rotate , skew  -->
+
+    <!-- but the problem is transform does not work with inline elements  -->
+
+    <!-- works only or block / inline-block elements  -->
+
+    <!-- keyword used is transform: ; -->
+
+    <div id="wrapper">
+      <a href="">Click Here</a>
+    </div>
+  </body>
+</html>

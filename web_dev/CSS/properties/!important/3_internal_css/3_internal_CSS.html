@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- INTERNAL CSS  -->
+
+    <!-- for this element ke this property ki yeh value dalna hai this is the format for it  -->
+
+    <!-- <style>
+      h1(element/selector)
+      {
+        color(property): green(value);
+      }
+    </style> -->
+
+    <style>
+
+      /* now here we have a clash in property for bg color of parah graph so remember for 1st and 3rd parah this property of green will sustain but as for 2nd parah we have defined inline as well as internal property here always as we read code from top to bottom so color of parah bg was violet then overruled when we reached inline style so css is executed order wise  */
+
+      /* if we want the color of the inline or external then  we have to add !important after them  */
+
+      p {
+        background-color: orange !important;
+      }
+
+      /* as important is added orange is shown and not the inline one  */
+      h1 {
+        color: forestgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>welcome to CSS</h1>
+    </header>
+
+    <body>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
+        molestiae possimus dolorum porro illo similique! Molestiae quidem vitae
+        sequi repellat?
+      </p>
+
+      <!-- styling applied inside the tag only refers to inline css  -->
+
+      <p style="background-color: yellow">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, nam
+        alias autem consectetur quaerat dolor aut in libero excepturi saepe.
+        Repellat voluptatibus quidem excepturi quod natus nulla, a et! Esse
+        nostrum rem explicabo id nisi commodi dicta est quidem culpa assumenda,
+        reprehenderit aut? Necessitatibus asperiores, illo laudantium aut
+        repudiandae maiores.
+      </p>
+
+      <!-- inline css styling  -->
+
+      <p style="color: red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magnam,
+        nam exercitationem, expedita debitis iusto alias eaque blanditiis a
+        consequatur, aliquid porro ipsa minima doloribus accusamus deserunt
+        aspernatur distinctio sapiente!
+      </p>
+
+      <footer>i am footer</footer>
+    </body>
+  </body>
+</html>

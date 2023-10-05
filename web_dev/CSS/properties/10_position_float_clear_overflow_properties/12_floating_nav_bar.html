@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+   
+ul{
+  background-color: green;  
+  list-style-type: none;
+
+  /* as soon as we set the li items as float left  then the li elements jump out of the ul this is because of overflow problem to counter it we add overflow:auto;  */
+
+  overflow: auto;
+
+}
+li{
+  color: white;
+  padding: 10px 15px;
+
+  /* float left helps us have the elements side ways and not column wise to look like navigation links  */
+  
+  float :left;
+}
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Home</li>
+    <li>About Us</li>
+    <li>Team</li>
+    <li>Contact Us</li>
+    <li>Donate</li>
+  </ul>
+</body>
+</html>

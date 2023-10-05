@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+      <!-- caption is used to add a caption to the table just as the figcaption of the <figure></figure> tag  -->
+      <caption>
+        <b>TABLE</b>
+      </caption>
+      <thead>
+        <th>SId</th>
+        <th>SName</th>
+        <th>Gender</th>
+        <th>Age</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>123</td>
+          <td colspan="3">ramesh</td>
+          <!-- as we removed the data of the next two columns for rakesh and want to extend the name data for them too we use colspan  -->
+          <!-- <td>M</td>
+        <td>19</td> -->
+        </tr>
+        <tr>
+          <td>456</td>
+          <td>rani</td>
+          <td>F</td>
+          <td rowspan="3">20</td>
+
+          <!--removed the data of age from the next two rows and extended the same age data for them too using row span  -->
+        </tr>
+        <tr>
+          <td>789</td>
+          <td>rahul</td>
+          <td>M</td>
+          <!-- <td>23</td> -->
+        </tr>
+        <tr>
+          <td>000</td>
+          <td>rakesh</td>
+          <td>M</td>
+          <!-- <td>22</td> -->
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

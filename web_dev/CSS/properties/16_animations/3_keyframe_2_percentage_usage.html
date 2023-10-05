@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+/* In the example keyframe_1 we have specified when the style will change by using the keywords "from" and "to" (which represents 0% (start) and 100% (complete)).
+
+It is also possible to use percent. By using percent, you can add as many style changes as you like.
+
+The following example will change the background-color of the <div> element when the animation is 25% complete, 50% complete, and again when the animation is 100% complete: */
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {width:200px ;}
+  50%  {background-color: blue;}
+  75%  {width:100px}
+  100% {background-color: green;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>
+
+

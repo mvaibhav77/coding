@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /*  internal css  */
+
+      #btn {
+        background-color: red ;
+        color: white ;
+        border: 2px solid black;
+        border-radius: 5px;
+        box-shadow: 3px 3px 0px black;
+      }
+
+    </style>
+  </head>
+  <body>
+    
+    <!-- apart from inline there are 2 more external an internal styling  -->
+
+    <!-- if we want to change them then simply writing inline style would overrule them  as inline has the highest priority -->
+
+    <button id="btn" style="color: blue;">Send</button>
+
+    <!-- if we want to know which kind of style is there we can know it by :  -->
+
+    <!-- .getComputedStyle(attribute name ) -->
+
+ <script>
+
+    let value = getComputedStyle(btn);
+
+    // tells all the styles applied 
+
+    console.log(value);
+
+    // to get to know a single property use this : 
+
+    // as we wrote an inline style of color: blue it overrules the internal color:white property
+
+    console.log(value.color);
+
+    console.log(value.backgroundColor);
+
+    console.log(value.borderRadius);
+
+    console.log(value.border);
+
+ </script>
+  </body>
+</html>

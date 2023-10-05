@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Using location</button>
+
+    <!--  inline event addition  -->
+
+    <button id="btn2" onclick="fun2()">Using Location.href</button>
+
+    <button id="btn3" onclick="fun3()">uisng location.assign()</button>
+
+    <script>
+      let btn = document.getElementById("btn");
+
+      // redirecting using a button
+
+      btn.addEventListener("click", fun);
+
+      // 1. to redirect we write the url after location = " ";
+
+      function fun() {
+        location = "https://www.google.com/";
+      }
+
+      // 2. redirecting can also be done using :
+
+      //   location.href="";
+
+      function fun2() {
+        location.href = "https://www.google.com/";
+      }
+
+      // whenever we use the location.href / location = and url ka link tb location.assign hee call hota hai 
+      
+
+      //3. so instead we cna use the location.assign(url) directly and pass the url as the argument 
+
+      function fun3 (){
+      location.assign("https://www.google.com/");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* border width is used to calssify the border width or motai  */
+
+      /* where as width is used to describe the space it will take on screen  */
+
+      /* height command is sued to increase the height tf the box overall  */
+      h1 {
+        background-color: aquamarine;
+
+        border-style: dashed;
+        border-width: 2px;
+        border-color: brown;
+        width: 350px;
+        height: 200px;
+      }
+      /* either we can use this type of decleration  OR border:style color width(px) */
+
+      /* border radius is used to provide rounded corners of the border  */
+      h2 {
+        background-color: lightgreen;
+        border: solid brown 3px;
+        border-radius: 5px;
+        width: 350px;
+      }
+
+      /* border-top-left-radius: ; border-top-right-radius: ; border-bottom-left-radius: ; border-bottom-right-radius: ; */
+
+      /* they are used to round a specific corner of the border differently   */
+
+      h3 {
+        background-color: lightpink;
+        border: solid black 3px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 2px;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 12px;
+        width: 350px;
+      }
+
+      /* border-top: solid brown 5px;
+      border-left: ; border-right: ; 
+      border-bottom: ; */
+
+      /* they are used to add border only at a specific place top left right bottom like wise  */
+
+      h4 {
+        background-color: lightseagreen;
+        border-top: solid brown 3px;
+        border-left: solid black 5px;
+        border-right: dashed blue 4px;
+        border-bottom: dashed blueviolet 4px;
+        width: 350px;
+      }
+
+      /* simialrly we can use border-top-color: ; border-left-color: ; border-right-color: ; border-bottom-color: ; to color specific top left right and bottom borders ddifferently  */
+
+      h5 {
+        background-color: burlywood;
+        border-style: solid;
+        border-bottom-color: black;
+        border-top-color: red;
+        border-left-color: blue;
+        border-right-color: lightgreen;
+        width: 350px;
+      }
+
+      .first {
+        background-color: blanchedalmond;
+        border: solid black 3px;
+        border-radius: 5px;
+      }
+
+      .second {
+        background-color: beige;
+        border: solid black 3px;
+        border-radius: 5px;
+      }
+      .third {
+        background-color: yellow;
+        border: solid black 3px;
+        border-radius: 5px;
+      }
+
+      /* when we use height and widht tag with span (an inline element) it does not work ... */
+
+      /* The reason why the width and height properties do not affect a <span> element is that the <span> element is an inline element. An inline element does not start on a new line and only takes up as much space as required. */
+
+      span {
+        background-color: yellow;
+        border: solid black 3px;
+        width: 350px;
+        height: 200px;
+      }
+
+      .hello {
+        display: block;
+        background-color: yellow;
+        border: solid black 3px;
+        width: 350px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <h2>Welcome</h2>
+    <h3>Welcome</h3>
+    <h4>Welcome</h4>
+    <h5>Welcome</h5>
+
+    <p class="first">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo qui ex
+      aperiam architecto mollitia obcaecati tenetur harum sit, fugiat, culpa
+      autem facilis reprehenderit et ratione esse excepturi modi numquam animi
+      laudantium doloremque explicabo unde consequatur. Eos, veritatis dicta!
+      Autem, vel.
+    </p>
+
+    <p class="second">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi optio
+      consectetur aspernatur expedita, beatae eaque exercitationem, temporibus
+      soluta fugit enim maxime quia ratione, perspiciatis itaque. Doloribus
+      similique quas pariatur itaque, ad distinctio ullam nemo, consectetur
+      ratione praesentium odit! Expedita, omnis.
+    </p>
+
+    <p class="third">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque esse
+      nesciunt natus ad velit soluta rem animi alias. Minima, option.
+    </p>
+    <br />
+
+    <span>HELLO WORLD</span>
+    <br />
+    <br />
+    <span class="hello">my span tag</span>
+  </body>
+</html>

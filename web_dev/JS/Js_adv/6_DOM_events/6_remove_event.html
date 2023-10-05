@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn1">Click 1</button>
+    <br />
+    <br />
+    <button id="btn2">Click 2</button>
+
+    <script>
+      // removing event listeners : 
+
+      //1. if we want to remove an event we can only do this if we added teh event by .addEventListener method
+
+      //2. we cant write anonymous function in event listener 
+
+      let btn1 = document.getElementById("btn1");
+
+      let bnt2 = document.getElementById("btn2");
+
+      function click1() {
+        console.log("click1");
+      }
+
+      function click2() {
+        console.log("click2");
+      }
+
+      btn1.addEventListener("click",click1 );
+
+      btn2.addEventListener("click", click2 );
+
+      // REMOVE :   
+
+      //.removeEventListener("nameofDOM",nameoffunction);
+
+      btn1.removeEventListener("click",click1);
+
+      // now only the event of button 2 being pressed is registered !! 
+      
+    </script>
+  </body>
+</html>

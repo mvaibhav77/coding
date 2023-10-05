@@ -1,0 +1,61 @@
+#border {
+  border-style: solid;
+
+  /* if we want separate or different borders for top/left/right/bottom then we can type as this  border-style: top right bottom left; */
+
+  border-style: solid dashed none dotted;
+
+  /* we can also declare as border-style: top/bottom left/right ; */
+
+  border-style: solid dashed;
+
+  /* border width  */
+
+  border-width: 3px;
+
+  /* here too we can declare separately for each of tehm as border-width: top right bottom left ; */
+
+  /* OR  */
+
+  /* or we can also declare as border-style: top/bottom left/right ; */
+
+  /* same as previous border-style: ; */
+
+  /* BORDER COLOR  */
+  border-color: blue;
+
+  /* here too we can declare separately for each of them top-right-left-bottom or as top/bottom and left/right 
+   */
+
+  border-color: red yellow green blue;
+
+  /* or  */
+
+  border-color: green blue;
+
+  /* shortcut written as  */
+
+  border: solid 3px green;
+
+  /* we can also use separate tags for each top left right bottom as given in border tag  */
+
+  border-top-style: solid;
+  border-top-color: red;
+  border-top-width: 4px;
+
+  /* similarly we have for border-bottom/left/right etc tooooooo  */
+
+  /* BORDER RADIS  */
+
+  /* if we want to curve the edges of teh border we use border-radius: ;  */
+
+  border-radius: 30px;
+
+  /* we can also write as border-radius: top L top R bottom R bottom L ; */
+
+  border-radius: 10px 20px 30px 5px;
+
+  /* now here to we have separate tags for selecting radius for each side like border-top-left-radius: ; border-top-right-radius: ; border-bottom-left-radius: ;
+  border-bottom-left-radius: ;  */
+
+}

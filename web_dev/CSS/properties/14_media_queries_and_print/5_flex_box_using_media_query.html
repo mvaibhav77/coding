@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- flexbox & grid is a very powerful tool ... used to create different layouts  -->
+
+    <!-- here we will elarn about flex box 
+    
+     flexbox is a 1-D layout method 
+    
+     flex box = flexible box 
+    
+    a container where flex box is applied is called flex box container 
+    
+     the items inside it are called flex box item 
+    
+    the x axis is : main axis 
+    
+     the y axis is : cross axis 
+    
+     left most and right most borders are called : main start and end 
+    
+    top and bottom most borders are called cross start and cross end 
+     -->
+
+    <!-- by default direction of flex box elements is row wise  -->
+
+    <style>
+      #container {
+        background-color: beige;
+
+        border: 2px solid black;
+
+        display: flex;
+        width: 450px;
+        margin: 10px;
+        padding: 2px;
+      }
+
+      #box1 {
+        background-color: aqua;
+        border: 1px solid black;
+        width: 50%;
+        margin: 2px;
+        padding: 2px;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      #box2 {
+        background-color: yellow;
+        border: 1px solid brown;
+        width: 48%;
+        margin: 2px;
+        padding: 2px;
+      }
+
+      p {
+        border: 2px solid black;
+      }
+
+      img {
+        width: 210px;
+      }
+
+      /* we made a layout design where we want ki 0-640 px tk humein content column wise dikhao then above 640 px we want content displayed as row wise  */
+
+      @media (max-width: 640px) {
+        #container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="box1">
+        <p>Text 1</p>
+        <p>Text 2</p>
+      </div>
+      <div id="box2">
+        <img src="./download (3).jpeg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

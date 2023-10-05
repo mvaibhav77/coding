@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #box{
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+        margin: 40px;
+        text-align: center;
+        color: black;
+      }
+
+    </style>
+</head>
+<body>
+    
+    <div id="box"><b>Content</b></div>
+
+    <script>
+
+        // window. is sued when we ki pure window mei kahi pe bhi agar yeh event ho toh uska pata humein cahlna chaiyea 
+
+        // if we want ko know what ever key from out keyboard is pressed throughout the window we use window.addEventListner('keydown',function() )
+
+        // see now whenever a key is pressed an information regarding it is passed which needs to be saved ina  variable in a function 
+
+        // that is why we have an argument in out function to store the information 
+
+        window.addEventListener('keydown',chckKey);
+
+        function chckKey(event){
+
+        console.log(event.key);
+
+        }
+
+        // now we can see in the log as soon as any key is pressed on the window
+
+
+    </script>
+</body>
+</html>

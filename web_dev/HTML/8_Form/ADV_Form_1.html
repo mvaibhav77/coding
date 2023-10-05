@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1><strong>Event Registration</strong></h1>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" name="fullname" id="name" />
+
+      <br />
+      <br />
+
+      <label for="email">Email</label>
+      <input type="email" name="emailid" id="email" />
+
+      <br />
+      <br />
+
+      <label for="phone">Phone</label>
+      <input
+        type="tel"
+        name="phoneno"
+        id="phone"
+        placeholder="1234-56-7890"
+        pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="occupation">Occupation</label>
+      <select name="job" id="occupation">
+        <option value="Other">Other</option>
+        <option value="Student">Student</option>
+        <option value="Professional">Professional</option>
+      </select>
+
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>Topic Of Interest</legend>
+
+        <br />
+        <br />
+
+        <input type="checkbox" name="interest" id="topic" />
+        <br />
+        <label for="topic">HTML</label>
+
+        <br />
+        <br />
+
+        <input type="checkbox" name="interest" id="topic" />
+        <br />
+        <label for="topic">CSS</label>
+        <br />
+        <br />
+
+        <input type="checkbox" name="interest" id="topic" />
+        <br />
+        <label for="topic">Java Script</label>
+
+        <br />
+        <br />
+      </fieldset>
+      <label for="textbox">Comments</label>
+
+      <br />
+      <br />
+
+      <textarea
+        name="textbox"
+        id="textbox"
+        cols="80"
+        rows="5"
+        placeholder="Enter Text Here"
+      ></textarea>
+
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>

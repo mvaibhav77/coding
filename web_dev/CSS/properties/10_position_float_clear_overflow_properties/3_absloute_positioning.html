@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        border: 1px solid black;
+        margin: 100px;
+      }
+      img {
+        margin: 10px;
+      }
+
+      /* absloute positioning is used when we generally want to  overlap the images */
+
+      /* It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block */
+
+      /* default position property is static  */
+
+      /* closest positioned ancestor means body tag here  as the div tag is not positioned it is static means not positioned so the closest ancestor left now is body */
+
+      /* so we mention the class of the div tag (closest ancestor) as absloute here  */
+
+      /* here the initial space of the image is not maintained it is overlapped by the other succeding image */
+
+      /* gap is not maintained here  */
+
+      /* .img2 ko absloute krte hee uska space htt jaata hai means that is occupied by the succeding ones 3rd image and the 2nd one overlapeds it   */
+
+      /* now when we type top;100px; then the 2nd image that overlaped the 3rd one moves down by 100px  */
+
+      /* absloute mei voh cheez whi pe reh ajata hai aur apana space chor deta hai  */
+
+      .img2 {
+        position: absolute;
+
+        /* now see as the closest ancestor is body tag goes at the very top of the body tag and not div tag  */
+
+        top: 0px;
+
+        /* goes to the extreme left of the body tag  */
+
+        left: 0px;
+      }
+
+      /* now see if we include this bottom code which means we are making the div tag the closest ancestor by making it relative and not static now it behaves as the closest ancestor  */
+
+      /* .container {
+         position: relative;
+      } */
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      
+      <!-- image is an inline-block element  -->
+
+      <img
+        src="./dog.jpeg"
+        alt="poster1"
+        height="300px"
+        width="300px"
+        class="img1"
+      />
+
+      <img
+        src="./code.jpeg"
+        alt="poster2"
+        height="300px"
+        width="300px"
+        class="img2"
+      />
+
+      <img
+        src="./coding.jpeg"
+        alt="poster3"
+        height="300px"
+        width="300px"
+        class="img3"
+      />
+
+      <img
+        src="./dop.jpeg"
+        alt="poster4"
+        height="300px"
+        width="300px"
+        class="img4"
+      />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        border: 1px solid black;
+      }
+      img {
+        margin: 10px;
+      }
+
+      /* effect takes place as we declared it as relative  */
+
+      /* 1. realtive mei we position the image with respect to the current window on the screen  */
+
+      /* 2. we have 4 attributes top bottom left right  to position then on the page */
+
+      /* 3. also even though we displace the image from its origional position the space which it occupied before didnt vanish vooh rhega hee wahan  */
+
+      /* if we move pic 40px top means apane current position se 40px upr jayega  */
+ 
+      /* realtive to its current positioning move krta hai  */
+
+      .img2 {
+        position: relative;
+
+        /* means top se 100px neeche  */
+
+        top: 50px;
+      }
+
+    .img4{
+      position: relative;
+      left: 200px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      
+      <!-- image is an inline-block element  -->
+
+      <img
+        src="./dog.jpeg"
+        alt="poster1"
+        height="300px"
+        width="300px"
+        class="img1"
+      />
+
+      <img
+        src="./code.jpeg"
+        alt="poster2"
+        height="300px"
+        width="300px"
+        class="img2"
+      />
+
+      <img
+        src="./coding.jpeg"
+        alt="poster3"
+        height="300px"
+        width="300px"
+        class="img3"
+      />
+
+      <img
+        src="./dop.jpeg"
+        alt="poster4"
+        height="300px"
+        width="300px"
+        class="img4"
+      />
+    </div>
+  </body>
+</html>

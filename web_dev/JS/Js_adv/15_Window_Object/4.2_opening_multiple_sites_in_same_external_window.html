@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Open Websites</title>
+  </head>
+  <body>
+    <button id="button1">Open Site 1</button>
+    <button id="button2">Open Site 2</button>
+
+    <script>
+      
+      let features = "height=400,width=600";
+
+      // Function to open websites in the same window !!
+
+      function openWebsite(url) {
+        window.open(url, "externalWindow" , features);
+      }
+
+      // Attach click event handlers to the buttons !!
+
+      document.getElementById("button1").addEventListener("click", function () {
+        openWebsite("https://www.example.com/site1");
+      });
+
+      document.getElementById("button2").addEventListener("click", function () {
+        openWebsite("https://www.example.com/site2");
+      });
+    </script>
+  </body>
+</html>

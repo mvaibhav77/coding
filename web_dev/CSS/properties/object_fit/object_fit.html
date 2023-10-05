@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      img {
+        border: 2px solid black;
+
+        height: 500px;
+        width: 400px;
+
+        /* see on applying height and width we see that the image becomes distorted  */
+
+        /* if we want it to fit within the bounds of the image container then we use contain attribute  */
+
+        object-fit: contain;
+
+        /* we have blank spaces here on teh sides if we dont want taht we use fill attribute  */
+
+        /* here the space is gone but the image becomes somewhat distorted  */
+
+        object-fit: fill;
+
+
+        /* here see if we want no distortion and no blank spaces we use cover  */
+
+        /* this will cover the whole of container but kaat dega image apane hisab se  */
+
+        object-fit: cover;
+
+        /* agr iamge kaat re ho toh we can decide which part of the iamge to be displayed  */
+
+        object-position: bottom left;
+
+        /* the abckground size and background position is same as that of object fit and position  */
+
+        object-fit: contain;
+
+        /* left side image lagana hai toh  */
+
+        object-position:top left ;
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./eiffel tower.jpeg" alt="" />
+  </body>
+</html>

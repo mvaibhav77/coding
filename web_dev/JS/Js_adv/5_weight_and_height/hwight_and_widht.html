@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #div {
+        background-color: brown;
+        color: white;
+        border: 3px solid black;
+        padding: 100px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div">
+      <p>This Is Dummy Text</p>
+    </div>
+
+    <script>
+      // there are two types of height and widht :
+
+      //offfset ( border padding margin included )
+
+      //and
+
+      // client ( border margin not included padding included)
+
+      let box = document.getElementById("div");
+
+      // OFFSET HEIGHT AND WIDTH :
+
+      let width = box.offsetWidth;
+
+      console.log("width : " + width);
+
+      let height = box.offsetHeight;
+
+      console.log("height : " + height);
+
+      // CLIENT WIDTH AND HEIGHT
+
+
+      // we can clearly see the difference in height and width as the border and amrgin are excluded 
+
+      let width2 = box.clientWidth;
+
+      console.log("width : " + width2);
+
+      let height2 = box.clientHeight;
+
+      console.log("height : " + height2);
+    </script>
+  </body>
+</html>

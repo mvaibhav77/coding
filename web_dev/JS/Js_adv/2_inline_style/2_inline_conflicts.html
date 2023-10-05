@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" style="color: red;">Send</button>
+
+    <button id="btn2" style="color: blue;">Send</button>
+
+    <button id="btn3" style="color: orange;">Send</button>
+
+    <script>
+
+        let btn = document.getElementById("btn");
+
+        let btn2 = document.getElementById("btn2");
+
+        let btn3 = document.getElementById("btn3");
+
+        // .style : does not overrule the pre-existing property rather adds on to the list of properties 
+
+        btn2.style.background= "red";
+
+        // overrules the preexisting properties 
+
+        btn3.setAttribute("style", "background-color: red ;");
+
+        btn.style.cssText ="background-color: red";
+
+        // inspect and see that the color attribute set as blue of the btn is overruled and only ther js property set using .style.cssText is present there 
+        
+        //cssText and .setAttribute overrules the existing properties of the tag REMEMBER !! 
+
+
+
+    </script>
+</body>
+</html>

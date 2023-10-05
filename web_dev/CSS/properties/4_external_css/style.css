@@ -1,0 +1,12 @@
+/* cascading style sheet  CSS  */
+/* external css we need to creaste a different css file for it  */
+h1 {
+  color: red;
+}
+p{
+  background-color: aquamarine !important;
+}
+
+/* we defined three different colors for the parah 2nd but alwasy wins the inline as its precedence is higher and external being the lowest  */
+
+/* is we want a specific color or which so ever decleration we have to add !important after it to display the required color  */

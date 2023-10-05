@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- here too writing of controls keyword is necessary as to view controls to play pause mute video as out wish   -->
+
+    <!-- the contetnt written between the opening and closing tags of video or audio is displayed in case the media is not loaded due to any reasons  -->
+
+    <!-- autoplay plays the video as soon as the site loads where as loop palys the video again and again on the page  -->
+
+    <!-- heifght width are used to set the ratio of the video screen we want on the page  -->
+
+    <!-- poster is used to add a tumbnail we want for out video as to be displayed on the site -->
+
+    <!-- writing only autoplay wont automatically play the videos coz Some modern browsers like chrome brave etc will not auto-play your video if it's not muted . The general rule of many browsers is that a user must opt-in to certain actions before they can happen. -->
+
+    <video
+      src="video.mp4"
+      height="400px"
+      width="400px"
+      controls
+      autoplay
+      muted
+      loop
+      poster="./video.jpeg"
+    ></video>
+
+    <br />
+
+    <!-- another way to add video on our page  -->
+
+    <video controls height="400px" width="400px">
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>

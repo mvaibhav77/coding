@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* we can use pseudo calss to style elements specifically we want like this  */
+
+      /* to decorate jsut the first child element  */
+
+      li:first-child {
+        color: red;
+      }
+
+      /* to decorate jsut the last element  */
+
+      li:last-child {
+        color: blue;
+      }
+
+      /* now to style any other element other than first or last we use the nth type  */
+
+      /* say we want to color the 3rd one  */
+
+      li:nth-child(3) {
+        color: blue;
+      }
+
+      /* if we want to color just the odd ones thne we use  */
+
+      /* only the odd numbers will get colored  */
+
+      li:nth-child(odd) {
+        color: blueviolet;
+      }
+
+      /* if we want only the even ones to be selected  */
+
+      li:nth-child(even)  
+      {
+        color: green;
+      }
+
+      /* if we want to style leements based on some pattern we use  */
+
+      /* pattern say 3n+0 so the elements 3,6,9, and so on will be colored orange  */
+
+      li:nth-child(3n+0)
+      {
+        color: darkorange;
+      }
+
+
+      /* if we want to style form the bottom we can use  */
+
+      /* so thje second last item is colored yellow  */
+      
+      li:nth-last-child(2)
+      {
+        color: yellow;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+
+    <p>this is p tag</p>
+    <p>this is p tag</p>
+    <p>this is p tag</p>
+    <p>this is p tag</p>
+    <p>this is p tag</p>
+
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>item 5</li>
+      <li>item 6</li>
+    </ul>
+  </body>
+</html>

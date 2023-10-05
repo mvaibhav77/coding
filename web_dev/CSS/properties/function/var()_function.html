@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* VAR() function is just like define of the c++ we define all the necessary things at one palce and use the names given to those properties everywhere insted of naming htem at every place   */
+
+      /* this is used to help us cahnge attribute properties throughout the code with just one adjustment in the root element  */
+
+      /* we declare all teh necesary properties in the :root{} */
+
+      /* changing just thee color in the root now will make effects all throughout the code  */
+
+      :root {
+        --primary-color: aqua;
+        --btn-color: red;
+        --text-color: white;
+      }
+
+      #fun {
+        background-color: var(--primary-color);
+        border: 1px solid black;
+        height: 200px;
+
+        width: calc(100% - 200px);
+      }
+
+      a {
+        padding: 10px 30px;
+
+        margin: 20px;
+
+        background-color: var(--btn-color);
+
+        border: 2px solid black;
+
+        /* to color the text  */
+
+        color: var(--text-color);
+
+        /* to remove the underline  */
+
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- functions of css :  -->
+
+    <!-- 1. rgb()  -->
+    <!-- 2.rgba() -->
+    <!-- 3.url('') -->
+    <!-- 4.linear-gradient(value) -->
+
+    <!-- whenever we have () this and we pass a value inside of it-it is a function  -->
+
+    <div id="fun"></div>
+
+    <hr />
+    <br />
+    <a href="https://www.google.com">Google</a>
+  </body>
+</html>

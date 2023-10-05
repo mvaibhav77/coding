@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fjalla+One"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="overlay">
+      <h1>Sign Up</h1>
+      <p>Create an account:</p>
+      <form action="submission.html" method="GET">
+        <!--Add the minlength and maxlength attributes to the input fields-->
+
+        <!-- here we set the max and min string length that can be inserted inside the fields respectively using the maxlength and minlength  -->
+
+        <label for="username">Username:</label>
+        <br />
+        <input
+          id="username"
+          name="username"
+          type="text"
+          required
+          maxlength="15"
+          minlength="3"
+        />
+        <br />
+        <label for="pw">Password:</label>
+        <br />
+        <input
+          id="pw"
+          name="pw"
+          type="password"
+          required
+          maxlength="15"
+          minlength="8"
+        />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+</html>

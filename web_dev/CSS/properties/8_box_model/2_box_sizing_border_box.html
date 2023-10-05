@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+
+        /* default is boxsizing : content-box;  */
+
+        box-sizing: content-box;
+
+        /* this means that the values given to the box is for the content to be covered only  */
+
+        /* here the border padding is not included in the container size and results in increasing the size of the div tag on adding padding and border  */
+
+        /* if we mention this then the changes occured in the origional size of the box due to the border and the padding wont take palce i.e. the size of the box wont be reduced rather the content will shrink and the size of the box will remain the same  */
+
+        /* hence the box reamins 300*300 only  */
+
+        /* INSHORT : box-sizing : ;  determines what all is to be included within the dimensions of the box container we created from all the content / border / padding  */
+
+        /* MARGIN IS NOT INCLUDED IN BOX SIZING BORDER BOX  */
+
+        box-sizing: border-box;
+      }
+
+      .hi {
+        /* here now we set the deafult size of 300*300 of the box */
+
+        width: 300px;
+        height: 300px;
+
+        /* now as we add border of 2 px each side it will change the height and width to 302*302 as no box size border box is applied  */
+
+        border: 2px solid black;
+
+        /* added padding of 100px each side meand now the size of box cahnged again to 502*502 as no box size border box applied   */
+
+        padding: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hi">Welcome To CSS !!</div>
+  </body>
+</html>

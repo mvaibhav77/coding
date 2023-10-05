@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+
+        /* border: ; */
+
+        padding: 20px;
+        width: 50%;
+        margin: 100px;
+        position: relative;
+      }
+
+      /* see if we want to create layers of elements we position them RELATIVE  firstly  */
+
+      /* then we position them using TOP BOTTOM RIGHT and LEFT such that they overlap each other and this is how we create layers from elements  */
+
+      /* now say if we want to decide the priority ki kaun sbse upar rhega kaun uske neeche and kaun sbse neeche we use Z-INDEX attribute to order the layers  */
+
+      /* z-index works only if the position is absloute relative or fixed only  */
+
+      /* z-index is kinda a number the higher the number more will be its priority  */
+
+      /* say we want the blue to not be hidden and at the very top we order them as  */
+      /* z-index:3 (blue) 2 (red) and 1 (orange)  */
+
+      /* if we want the red to be at very top then blue then orange we have 3 for red 2 for blue and 1 for orange  */
+
+
+      #one {
+
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+      }
+      
+
+      #two {
+
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        display: inline-block;
+        position: relative;
+
+        top: 50px;
+        left: -50px;
+        z-index: 3;
+      
+      }
+
+      #three {
+
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        display: inline-block;
+        position: relative;
+
+        top: 100px;
+        left: -100px;
+        z-index: 1;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div id="one"></div>
+      <div id="two"></div>
+      <div id="three"></div>
+    </div>
+  </body>
+</html>

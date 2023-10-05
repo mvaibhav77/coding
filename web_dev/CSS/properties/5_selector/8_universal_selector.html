@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* we always notice that there is a by default margin and paddding given to us by default for all the tags or properties we apply if we want no margin or padding wtc ... that is no default values iof properties then we use universal selector adn define the properties value as zero inside of it so as to remove the by default value   */
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      /* now we can clearly se the difference that no default padding and margin are added to the div tag   */
+      
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: beige;
+        border: 2px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Div</div>
+  </body>
+</html>

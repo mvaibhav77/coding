@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .color {
+        background-color: orange;
+        color: black;
+      }
+
+      .dim {
+        border: 3px solid red;
+        padding: 100px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="box" class="color">
+      <p>This is Dummy text</p>
+    </div>
+
+    <script>
+
+      // if we want to add a class to the div tag : 
+
+      let box = document.getElementById("box");
+
+      // add class using .classList.add() 
+
+      // here it is not mandatory to add space in order to have different spcaed words in the class as in className :  
+
+      box.classList.add("yoo");
+
+      for (let css of box.classList) {
+        console.log(css);
+      }
+
+      // now we can see the list of class at present 
+
+    </script>
+  </body>
+</html>

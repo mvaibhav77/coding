@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        border: 2px dashed black;
+      }
+
+      /* now we can see the body tag space ... */
+
+      /* now remember whenever we use a realtive measuring type like percentagte which depends on the size of the parent tag and decides the height/width etc.. */
+
+      /* here the parent of box class is body tag i.e. parent of div is body so the width we set as 25% is set as the 25% of the actual size of the body tag  */
+
+      .box {
+        border: 2px solid red;
+        width: 25%;
+      }
+
+      #parent {
+        background-color: beige;
+        border: 2px solid black;
+
+        /* her ewe set the parent width only as 50% of its parent tag which is body tag  */
+        width: 50%;
+      }
+
+      #child {
+        background-color: lightblue;
+        border: 2px solid blueviolet;
+
+        /* se now the width adjusts according to 20% of the size of parent div tag which is 50% of the size of body tag   */
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Welcome To CSS !!</div>
+    <br />
+    <br />
+
+    <!-- here we declared parent and child tags and assigned colors and border to them ...  -->
+
+    <!-- first the parent tag is made and assigned border and bg color  -->
+
+    <!-- then the childtag is made overlapping the parent tag and assigned border and bg color  -->
+
+    <!-- now in style when we set the width using percentage we see that the width adjusts according to 
+    the width of the parent tag  -->
+
+    <div id="parent">
+      <div id="child">CHILD TAG</div>
+    </div>
+  </body>
+</html>

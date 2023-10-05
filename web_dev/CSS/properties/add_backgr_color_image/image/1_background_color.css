@@ -1,0 +1,13 @@
+#bg
+{
+  background-color: yellow;
+}
+
+/* now div tag tk yellow and all the body is in red  */
+
+/* we can also use hsl/ hsla /rgb / rgba etc.. */
+
+body
+{
+  background-color: red;
+}

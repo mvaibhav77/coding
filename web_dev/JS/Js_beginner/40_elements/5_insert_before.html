@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  using append we added at the very lst of the document -->
+
+    <!--  what if we want to add at the first , second .... second last this can be done using append  -->
+
+    <!-- we always have to select the parent jismei humein content add krrna hai 
+     -->
+
+    <!-- second thing is create element  -->
+
+    <!-- third thing is adding it to the required position in the document -->
+
+    <ul id="first">
+      <!-- 1 -->
+      <li>List 1</li>
+      <!-- 2 -->
+      <li>List 2</li>
+      <!-- 3 -->
+      <li>List 3</li>
+      <!-- 4 -->
+      <li>List 4</li>
+    </ul>
+
+    <ul id="second">
+      <li>List 6</li>
+      <li>List 7</li>
+      <li>List 8</li>
+      <li>List 9</li>
+    </ul>
+
+    <ul id="third">
+      <li>List 11</li>
+      <li>List 12</li>
+      <li>List 13</li>
+      <li>List 14</li>
+    </ul>
+    <script>
+      //1.
+
+      // select parent
+
+      let parent = document.getElementById("first");
+
+      // create element li naya ek
+
+      let content = document.createElement("li");
+
+      // add content in it
+
+      content.textContent = "List 5";
+
+      // add position : i.e say we wan tto ad before the first list then we do
+
+      let pos = parent.firstElementChild;
+
+      // insert before function element
+
+      //.insertBefore( what-to-add , position )
+
+      parent.insertBefore(content, pos);
+
+      //2.
+
+      let parent2 = document.getElementById("second");
+
+      let content2 = document.createElement("li");
+
+      content2.textContent = "List 10";
+
+      // now say if we want ki element is entered before the second list item i.e on the seocnd position we do ;
+
+      // we select teh first element from the parent using the firstXChildElement
+
+      // now after selecting the first child element we sellect the next successive child that is list 2 by :
+
+      //.nextElementSibling
+
+      let pos2 = parent2.firstElementChild.nextElementSibling;
+
+      parent2.insertBefore(content2, pos2);
+
+      //3.
+
+      // now if we want to select the third palce and enter out content there we do it the same way using the nextElementSibling again
+
+      let parent3 = document.getElementById("third");
+
+      let content3 = document.createElement("li");
+
+      content3.textContent = "List 15";
+
+      let pos3 =
+        parent3.firstElementChild.nextElementSibling.nextElementSibling;
+
+      parent3.insertBefore(content3, pos3);
+
+      // now say agar humein list ul ke pehle kuch inserty krna hai tb ?
+
+      // tb hamara parent ban jayega body
+
+      let main = document.body;
+
+      let elm = document.createElement("h2");
+
+      elm.textContent = "Heading 2";
+
+      // positon of start of list :
+
+      let list = document.getElementById('first');
+
+      main.insertBefore(elm, list);
+
+    </script>
+  </body>
+</html>

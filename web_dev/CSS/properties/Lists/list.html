@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* when we do this we see that the icon is outside the border if we want them to be inside we use  list-style-position: inside ; by default it is outside but we want it inside */
+
+      li {
+        border: 1px solid black;
+      }
+
+      ul {
+
+        /* we can see now that the image is inside the border  */
+        
+        list-style-position: inside;
+
+        /* the disc style is by default : filled in circle  */
+
+        list-style-type: disc;
+
+        /* if we want to cahnge to circle : empty disc we use this  */
+
+        list-style-type: circle;
+
+        /* sqaure can be done like this  */
+
+        list-style-type: square;
+
+        /* if want to have an iamge as style we use  */
+
+        list-style-image: url("./arrow\ \(1\).png");
+      }
+
+      ol {
+        /* if we want capital letters  */
+
+        list-style-type: upper-alpha;
+
+        /* if we want lower alpha  */
+
+        list-style-type: lower-alpha;
+
+        /* if we want lower roman  */
+
+        list-style-type: lower-roman;
+
+        /* if we want upper roman we use  */
+
+        list-style-type: upper-roman;
+
+        /* if we want decimal like 1.  */
+
+        list-style-type: decimal;
+
+        /* if we want 01 / 02 etc .. we can use  */
+
+        list-style-type: decimal-leading-zero;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Ordered List</h2>
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ol>
+
+    <hr />
+
+    <h2>Unordered List</h2>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+  </body>
+</html>

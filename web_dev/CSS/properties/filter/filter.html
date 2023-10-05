@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*  filter property image pe hee algta hai   */
+
+      img {
+        /* all the properties number we need to give inside the ()  */
+
+        /* blur value in pixels */
+        
+        filter: blur(5px);
+
+        /* brightness & contrast we give in percentage  */
+
+        filter: brightness(50%);
+
+        filter: contrast(70%);
+
+        /* drop shadow is used to provide a shadow to the iamge too  */
+
+        /* we can also use box sahdow must drop shadow is fine too for images  */
+
+        /* we give valeus as x axis y axis blur color  */
+
+        filter: drop-shadow(10px 10px 5px black);
+
+        /* grayscale used to convert the pics to black and white done giving the percentage of how much of b/w effect we want  */
+
+        filter: grayscale(30%);
+
+        /* hue rotate value is given in degree (eg: 90deg) it is used to give color according to the hue wheel 
+         */
+
+         filter: hue-rotate(120deg);
+
+         /* we get the color of the hue circle at 120deg  */
+
+
+         /* invert is used to inver the images value given in percentage  */
+
+         filter: invert(100%) ;
+
+         /* opacity attribute of filter is also there we could use opacity property directly too but it also provides the function of opacity -- value in percentage  */
+
+         filter: opacity(30%);
+
+         /* to apply saturation filter to our images we use saturation  */
+
+         filter: saturate(40%);
+
+         filter: sepia(50%);
+
+         /* we can also apply all tehse in single line as  */
+
+         /* filter: contrast() saturate() brightness() invert() etc... ; */
+
+
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- filter property image pe hee algta hai  -->
+
+    <img src="./1.jpeg" alt="img" />
+  </body>
+</html>

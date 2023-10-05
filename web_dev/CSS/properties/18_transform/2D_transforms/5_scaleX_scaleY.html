@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #wrapper {
+        padding: 20px;
+        margin: 20px;
+      }
+
+      a {
+        /* to remove underline  */
+
+        text-decoration: none;
+
+        background-color: aqua;
+
+        padding: 10px 20px;
+
+        color: red;
+        
+      }
+
+      /* scale method is used to increase or decrease the size of the element .  */
+
+      /* works as transform : scaleX( width) */
+
+      /* the number can range from 0-infinity */
+
+      a:hover {
+        display: inline-block;
+
+        /* this means that the size will be 2X the Width */
+
+        transform: scaleX(2);
+
+        /* this means that the size will be 1.6X the height */
+
+        transform: scaleY(1.6X);
+
+
+        /* 
+        *v.v.imp* but the thing is when using the scaleX / scaleY only the succeding one will be applied and not both  */
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- with 2d transform we can scale , move , rotate , skew  -->
+
+    <!-- but the problem is it does not work with inline elements  -->
+
+    <!-- works only or block / inline-block elements  -->
+
+    <!-- keyword used is transform: ; -->
+
+    <div id="wrapper">
+      <a href="">Click Here</a>
+    </div>
+  </body>
+</html>

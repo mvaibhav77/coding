@@ -1,0 +1,7 @@
+value : attribute is used to assign a predefined value inside the text area
+
+name : is used to give a name to what this field is about 
+
+Id : it is used to provide a unique id to it and is used to refer to the label with the same id 
+
+type : used to specify the rtype of data that we want to create with the input tag

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- if we want to remove the child element there should be a parent for it  -->
+
+    <ul id="first">
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+      <li>List Item 4</li>
+    </ul>
+
+    <ul id="menu">
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Contact</li>
+    </ul>
+
+    <script>
+      //1.
+
+      // select parent
+
+      let parent = document.getElementById("first");
+
+      // select the child we want to remove
+
+      let elm = parent.firstElementChild;
+
+      // remove it
+
+      parent.removeChild(elm);
+
+      //2.
+
+      // select parnet
+
+      let parent2 = document.getElementById("menu");
+
+      // now say we want to rmeove the second element from teh list we do it by using the nextElementSibling
+
+      // select element we want to remove
+
+      let elm2 = parent2.firstElementChild.nextElementSibling;
+
+      parent2.removeChild(elm2);
+
+      // sismilarly if we want to remove the next / the third we can use the nextElmentSibling again and again to do it
+
+      //3. 
+
+      // now say if we want ki pura ka pura list hee gayab karna hai first wala '
+    
+      document.body.removeChild(parent);
+      
+    </script>
+  </body>
+</html>

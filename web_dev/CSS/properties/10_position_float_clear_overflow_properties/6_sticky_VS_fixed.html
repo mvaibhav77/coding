@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        border: 1px solid black;
+      }
+
+      img {
+        margin: 10px;
+      }
+
+      .container {
+        position: relative;
+        height: 8000px;
+        background-color: beige;
+      }
+
+      /* in sticky we need to mention the position type as well as the top left right or bottom property to see the effect  */
+
+      .img3 {
+        position: sticky;
+        top: 100px;
+      }
+
+      /* now we will observe the difference between sticky and fixed we see that as soon as we start scrolling they both stay fixed until the container class finishes as soon as the container class finishes the sticky image disappears where as the fixed one does not disappear even on entering the new box class this is the difference between sticky and fixed  */
+
+      .img4 {
+        position: fixed;
+      }
+
+      .box {
+        background-color: aquamarine;
+        height: 5000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- image is an inline-block element  -->
+
+      <img
+        src="./dog.jpeg"
+        alt="poster1"
+        height="300px"
+        width="300px"
+        class="img1"
+      />
+
+      <img
+        src="./code.jpeg"
+        alt="poster2"
+        height="300px"
+        width="300px"
+        class="img2"
+      />
+
+      <img
+        src="./coding.jpeg"
+        alt="poster3"
+        height="300px"
+        width="300px"
+        class="img3"
+      />
+
+      <img
+        src="./dop.jpeg"
+        alt="poster4"
+        height="300px"
+        width="300px"
+        class="img4"
+      />
+    </div>
+
+    <div class="box"></div>
+  </body>
+</html>

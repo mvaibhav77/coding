@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <!-- FORM elements  -->
+      <!-- input , label , select , option , button , text area , field set , legend  -->
+
+      <!-- if we have different sections in a form and elements of that section are related to each other then we can close them under one field section  -->
+
+      <!-- to give heading / caption to the field section we use legend  -->
+
+      <br />
+      <br />
+
+      <!-- select used to give dropdown selection options  -->
+
+      <!-- here too the id of select need to be same as that for label  -->
+
+      <!-- ifm we wanta  default text in the drop down option we jsut have to intitialise a <option value="">content</option> content carries that pre defined text that we want -->
+
+      <!-- we can also use the size attribute inside the select to control the number of options to be displayed at once -->
+
+      <label for="select1">choose ur dish !!</label>
+      <select name="dish" id="select1" size="2">
+        <!-- as sisze is 2 the first two options will be visible at first sight  -->
+
+        <!-- this is where i am creating a pre define d content that i want to display at the start of the drop down  -->
+
+        <option value="">---choose ur food---</option>
+        <option value="maggie">maggie</option>
+        <option value="kurkure">kurkure</option>
+      </select>
+
+      <br />
+      <br />
+
+      <!-- no size used means only one option visible at a time  -->
+
+      <label for="select1">choose ur dish !!</label>
+      <select name="dish" id="select1">
+        <option value="">---choose ur food---</option>
+        <option value="maggie">maggie</option>
+        <option value="kurkure">kurkure</option>
+        \
+      </select>
+
+      <br />
+      <br />
+
+      <!-- how to select multiple options from drop down box ???  -->
+
+      <label for="select1">choose ur dish !!</label>
+
+      <!-- multiple attribute needs to be used in order to select more than one option  -->
+
+      <!-- we need to hold down the ctrl key to select multiple options  -->
+
+      <select name="dish" id="select1" multiple>
+        <option value="maggie">maggie</option>
+        <option value="kurkure">kurkure</option>
+        <option value="pasta">pasta</option>
+      </select>
+      
+      <br />
+      <br />
+
+      <!-- create a list with different sections in it using the select tag  -->
+
+      <label for="list">Choose</label>
+      <select name="list" id="list">
+        <optgroup label="car">
+          <option value="bmw">bmw</option>
+          <option value="supra">supra</option>
+          <option value="mustang">mustang</option>
+        </optgroup>
+        <optgroup label="bike">
+          <option value="harley">harley</option>
+          <option value="ktm">ktm</option>
+          <option value="java">java</option>
+        </optgroup>
+        g
+      </select>
+    </form>
+  </body>
+</html>

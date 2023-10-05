@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //VARIABLE :
+
+      var x = "hii";
+
+      // a variable declared using var means it is already an object for the window now :
+
+      // variable declared using const and let aren't window objects .
+
+      console.log(x);
+
+      // calling using the window property :
+
+      console.log("using window property : " + window.x);
+
+      // as there is no error means that the window property is valid .
+
+      // the code runs without the window property too as window id the default property
+
+      //even though we dont write window.x and just write x the js understands ki yeh window property ko hee call hora hai
+
+      // FUNCTION :
+
+      function xyz() {
+        console.log("hello...");
+      }
+
+      // a declared funtion means it is already the method of the window now :
+
+      // default calling :
+
+      xyz();
+
+      //   calling using window.funtionname :
+
+      window.xyz();
+
+      //the code runs without the window property too as window id the default property
+
+      //even though we dont write window.xyz() and just write xyz() the js understands ki yeh window property ko hee call hora hai
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* using media tag we can set different dispalys for different terms such as screen display or print etc ... say we want ki print ke tym image na rhe ya font ka size bada ho etc .. we can describe a adifferent media for it  */
+      @media screen {
+        P {
+          font-size: 20px;
+        }
+      }
+
+      @media print {
+        p {
+          /* bigger font size  */
+
+          font-size: 30px;
+        }
+        img {
+          /* image to not be displayed  */
+
+          display: none;
+        }
+
+        div {
+          /* width of div tag to be 5-% only on print  */
+
+          width: 50%;
+        }
+
+        /* now when we press ctrl+p to print we will se that the changes we wanted have been applied to it  */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        <img src="./dop.jpeg" alt="" /> Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Voluptatum beatae officia error soluta repudiandae
+        optio adipisci tempore, delectus ullam. Quaerat totam corrupti nostrum
+        dolore nam officia dolor in amet. Labore repellendus similique,
+        distinctio ullam minima aliquid minus sapiente dolorem totam ex ratione
+        reprehenderit? Dolores reprehenderit vero, quod cumque id quis magni
+        quibusdam placeat illo molestiae quia doloribus impedit nemo est qui
+        ratione odit voluptatibus ipsa blanditiis ducimus laudantium deserunt
+        aperiam architecto! Fugiat officia autem error, consequuntur
+        exercitationem atque velit, rem doloribus ab blanditiis ullam dolores
+        voluptas unde asperiores architecto qui iure est praesentium hic! Ut
+        eaque odio aspernatur exercitationem tenetur!
+      </p>
+    </div>
+  </body>
+</html>

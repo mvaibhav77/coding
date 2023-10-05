@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        overflow : auto;
+      }
+
+      /* see we have a container tag div with calss container */
+
+      /* now as we set the inside div tags side by side using the float tag the parent tag collapses this is called overflowing property  */
+
+
+      /* as we try to use float left or give containers or li elements etc navigation type designs they tend to exceed bound of parent tag and the parent tag collapses so to avoid it we use overflow:auto; */
+
+      /* the div childs are overflowing fromm the parent  */
+
+      /* if we want this to stop we add overflow :auto; in parent tag  */
+      
+      /* now the parent div tag does not collapse  */
+
+      /* overflow refers to when content is overflowing 
+      i.e. the container cant hold all the content and content exceeds the bounds of the tag  */
+      
+      .box
+      {
+        border: 2px solid brown ;
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+<div class="box">A</div>
+<div class="box">B</div>
+<div class="box">C</div>
+<div class="box">D</div>
+    </div>
+  </body>
+</html>

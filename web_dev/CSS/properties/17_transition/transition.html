@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        height: 100px;
+
+        width: 100px;
+
+        background-color: red;
+
+        margin: 100px;
+
+        /* transition means basically moving from one state to another whereas animation is a series of complex movements / a set of transitions */
+
+        /* transition is same as that of aniamtion all the types and values including fucntion names only the initial name is changed from animation to transition  */
+
+        /* transition property contains the name of the category which is being changed in the passive states of hover click etc  */
+
+        /* if we have multiple changes we name them side by side using ,  */
+
+        transition-property: width;
+
+        /* to apply to two or more we writre as  */
+
+        transition-property: width, background-color;
+
+        /* to apply to all teh properties mentioned in hover we use  */
+
+        /* transition:all; 
+        will make changes to all states that are mentioned in hover etc.. */
+
+        transition-property: all;
+
+        /* duration refers to the time which it will take to complete the transition  */
+
+        transition-duration: 1s;
+
+        /* if we want the transition to beginn after some delay we use transition delay  */
+
+        transition-delay: 1s;
+
+        /* transition function is same as that of animation timing function we have different type of ease0in ease-out ease-in-out etc .. */
+
+        transition-timing-function: ease-in;
+
+        /* SHORT HAND FORMAT  */
+
+        /* tansition: property , duration , timing function , delay; */
+        
+        /* we can also provide different delays and duration for the animation of different attributes */
+
+        transition: width, 1s, ease-in, 1s, background-color, 2s, ease-in, 2s;
+
+        /* OR   */
+
+        transition: all , 1s, ease-in, 1s ;
+      }
+
+      /* transition is applied in between states means we need to use some pseudo classes tooo  */
+
+      /* we see that transition jhatke se hota hai as we hover it above the container  */
+
+      /* if we want to smoothen etc the the transition we use transition:  */
+
+      /* for mentioning or smoothning the transition we need atleast 2 things compulsarily  */
+
+      /* transition-property , transition-duration these two are compulsary */
+
+      #div1:hover {
+        width: 400px;
+
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+  </body>
+</html>

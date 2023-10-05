@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Radio Input</title>
+  </head>
+  <body>
+
+     <section class="sauce-selection">
+					<label for="sauce">What type of sauce would you like?</label>
+          <input type="text" list="sauces" id="sauce" name="sauce">
+
+
+          <!-- Even if we have an organized dropdown list, if the list has a lot of options, it could be tedious for users to scroll through the entire list to locate one option. That’s where using the <datalist> element comes in handy. -->
+
+         <!-- The <datalist> is used with an <input type="text"> element. The <input> creates a text field that users can type into and filter options from the <datalist> -->
+
+          <!-- here we can ttype our wanted ioption in the text area provided  -->
+
+          <!-- the thing is we mentiona  list in the input type and that liost name ahs the same name as that of that of datalist id  -->
+
+          <datalist id="sauces">
+            <option value="ketchup">ketchup</option>
+            <option value="mayo">mayo</option>
+            <option value="other">other</option>
+            
+					
+          
+        </section>
+
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- EXTERNAL CSS  -->
+
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+    <!-- we read code from top to bottom so first external color applied then internal overrules it then internal css over rules it so if we want a particular color use !important after it   -->
+
+    <!-- INTERNAL CSS  -->
+
+    <style>
+      p {
+        background-color: blueviolet;
+      }
+
+      h1 {
+        color: forestgreen;
+      }
+    </style>
+
+    <!-- if we link css after the style tag then the css color over rules the inline one as code read from top to bottom -->
+
+    <!-- <link rel="stylesheet" href="style.css" />
+
+    <-- this would result in the display of bg color of parah mentioned in the external css  -->
+
+  </head>
+  <body>
+    <header>
+      <h1>welcome to CSS</h1>
+    </header>
+
+    <body>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
+        molestiae possimus dolorum porro illo similique! Molestiae quidem vitae
+        sequi repellat?
+      </p>
+
+      <!-- styling applied inside the tag only refers to inline css  -->
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, nam
+        alias autem consectetur quaerat dolor aut in libero excepturi saepe.
+        Repellat voluptatibus quidem excepturi quod natus nulla, a et! Esse
+        nostrum rem explicabo id nisi commodi dicta est quidem culpa assumenda,
+        reprehenderit aut? Necessitatibus asperiores, illo laudantium aut
+        repudiandae maiores.
+      </p>
+
+      <!-- inline css styling  -->
+
+      <p style="color: red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magnam,
+        nam exercitationem, expedita debitis iusto alias eaque blanditiis a
+        consequatur, aliquid porro ipsa minima doloribus accusamus deserunt
+        aspernatur distinctio sapiente!
+      </p>
+
+      <footer>i am footer</footer>
+    </body>
+  </body>
+</html>

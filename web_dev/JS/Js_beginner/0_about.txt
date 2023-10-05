@@ -1,0 +1,70 @@
+WHAT IS JS? --->
+
+1. js a light weight object oriented programming language used by most of teh websites for scripting their web pages .
+
+2. it enables dynamic interactivity on websites when applied to an html doc .
+
+WHY JS  BORN ?
+
+To Create : 
+
+  1. popup 
+
+  2. event on click 
+
+  3. client side validation etc...
+
+mtlb jb user kuch kare toh wesite react kare isiliyea js !!!
+
+html , css and js are client side lang 
+
+WHERE IS JS NOW ??
+
+  1. website client side (js , jquery , reactjs)
+
+  2. website server side (node js , express js ..)
+
+  3. mobile dev (react native , phone gap etc ..)
+
+  4. software developement (electronjs : Ex-vscode)
+
+  ECMA INTERNATIONAL : 
+        creates standards for technologies . 
+
+ECMA 262 : 
+      standard published by ecma international which contains the specialisation for a general purpose scripting lang.
+
+ECMA Script : 
+     the specialisation writen in ecma 262 for creating a general purpose scripting lang .
+
+JAVA Script : 
+       a general purpose scripting language thyat conforms to the ECMAScript specification
+
+by reading ecma script specification we learn how to 'create' a scripting language .
+
+by reading javascript doc you learn how to 'use' a scripting lang .
+
+" JAVA SCRIPT implements the ECMAScript specification as described in ECMA-262 "
+
+ES6 2015 : ecma script 6 : 6th edition  / ES2015 /ECMAScript 2015  (major change )
+
+ES7 2016 : ecma script 7th edition  (2016) / 7th edition
+
+ES8 2017 : ecma script 8th edition  (2017) / 8th edition
+
+ES9 2018 : ecma script 8th edition  (2018) / 9th edition
+
+ES10  2019 : ecma script 8th edition  (2019) / 10th edition
+
+ES11 2020: ecma script 8th edition  (2020) / 11th edition
+          
+
+JS ENGINE : 
+  Chrome : v8 
+  FireFox : spider-monkey 
+  Edge : Chakra
+
+
+java script can be written inside the html file or ina  separate js file or inside the cosole in the inspect area of the browser
+
+the console also tells us teh error of the js file code .

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        border: 1px solid black;
+      }
+      img {
+        margin: 10px;
+      }
+
+      /* default position property is static  */
+
+      /* in fixed positioning the image is fixed at its place even at scrolling it dosent go out of the screen  */
+
+      .container {
+        height: 8000px;
+        background-color: beige;
+      }
+
+      /* now even at scrolling the image 4 dosent go out of the screen  */
+
+      .img4 {
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- image is an inline-block element  -->
+
+      <img
+        src="./dog.jpeg"
+        alt="poster1"
+        height="300px"
+        width="300px"
+        class="img1"
+      />
+
+      <img
+        src="./code.jpeg"
+        alt="poster2"
+        height="300px"
+        width="300px"
+        class="img2"
+      />
+
+      <img
+        src="./coding.jpeg"
+        alt="poster3"
+        height="300px"
+        width="300px"
+        class="img3"
+      />
+
+      <img
+        src="./dop.jpeg"
+        alt="poster4"
+        height="300px"
+        width="300px"
+        class="img4"
+      />
+    </div>
+  </body>
+</html>

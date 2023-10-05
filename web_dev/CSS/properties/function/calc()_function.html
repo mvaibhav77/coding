@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #fun {
+        background-color: aqua;
+        border: 1px solid black;
+        height: 200px;
+
+        /* we set the width as 70%  */
+
+        width: 90%;
+
+        /* now we say want a pic in the left over space  */
+
+        /* but relatively as we shrunk in the page or if it is opened in different screen the size of both the div and the image vary    */
+
+        /* CALC()  */
+
+        /* if we dont want this to happen we want only the div to shrink and not the image we use width: calc(value1 - value2); */
+
+        width: calc(100% - 200px);
+
+        /* now we see taht if we shrunk in teh page of something the space for the image remains the same uncahnged and only the div tag is stretched or shrunken  */
+
+      }
+
+      a{
+        padding: 10px 30px;
+
+        margin: 20px;
+
+        background-color: red;  
+
+        border: 2px solid black;
+
+        /* to color the text  */
+
+        color: white;
+
+        /* to remove the underline  */
+
+        text-decoration: none;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- functions of css :  -->
+
+    <!-- 1. rgb()  -->
+    <!-- 2.rgba() -->
+    <!-- 3.url('') -->
+    <!-- 4.linear-gradient(value) -->
+
+    <!-- whenever we have () this and we pass a value inside of it-it is a function  -->
+
+    <div id="fun"></div>
+
+    <hr>
+    <br>
+    <a href="https://www.google.com">Google</a>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: cornsilk;
+        padding: 100px;
+      }
+
+      #container {
+        padding: 50px;
+        background-color: orange;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+
+      <button id="btn">Click Me</button>
+
+    </div>
+
+    <script>
+
+      // in event bubbling the event starts with the most specific element i.e the inner most element and follows upwards / outer side :
+
+      // means the button event is captured first then the div then the body element
+
+      // select elements :
+
+      let btn = document.getElementById("btn");
+
+      let div = document.getElementById("container");
+
+      // add event listeners :
+
+      // here evene tlistener is added as :
+
+      //.addEventListener('click',funtion name , true/false )
+
+      // false : event bubbling
+
+      // true : event capturing
+
+      // if nothing is passed means false value hai
+
+      btn.addEventListener("click", btnClick); // false value hai default
+
+      div.addEventListener("click", divClick); // false value hai default
+
+      document.body.addEventListener("click", bodyClick); // false value hai default
+
+      function btnClick() {
+        console.log("button clicked ...");
+      }
+
+      function divClick() {
+        console.log("div clicked ...");
+      }
+
+      function bodyClick() {
+        console.log("body clicked ...");
+      }
+
+
+      // pehle child then parent 
+       
+      // we can see if we click button O/P : button clicked div clicked body clicked 
+
+      // if we click div O/P : div clicked body clicked
+
+      // if we click only body O/p : body clicked
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // say we want to pop up some message or something after sometime after the page is loaded  :
+
+      // in this case we use the setTimeout(fuction name , delay duration 'ms' )
+
+      // the setTimeout also provides an id for its event which needs to be stored in a variable in case we want to use it for further processes
+
+      // 1000 ms = 1 second delay
+
+      let timoutId = setTimeout(timeOut, 4000); // after 4 seconds act karware
+
+      function timeOut() {
+        alert("timeout activated ....");
+      }
+
+      // now say if we want to shut the timeout popup before it gets executed ...
+
+      // like say 4 baje uth gaye 5 bje ka alarm tha toh bnd toh karenge na
+
+      // For this we use the 'clearTimeout' to do so
+
+      // for using clearTimeout we need to provide the id of the event also which is sotred in teh variable assigned to the setTimeout funtion
+
+      // this clear timeout is used in places where we want ki say if the person hasn't subscribed thbhi ho pop up else not -> EG : 
+
+    //   //if(condition){
+
+    //     clearTimeout(timoutId);
+
+    //   }
+    </script>
+  </body>
+</html>
